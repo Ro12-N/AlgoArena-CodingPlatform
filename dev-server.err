@@ -1,0 +1,12 @@
+ ⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (173kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/create-problem'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/problems'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (173kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)

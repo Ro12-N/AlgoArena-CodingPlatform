@@ -1,0 +1,1260 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v25.2.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode\.npmrc
+5 silly config load:file:C:\Users\loq\.npmrc
+6 silly config load:file:C:\Users\loq\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode\.npm-cache\_logs\2026-04-25T14_48_44_209Z-
+10 verbose logfile C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode\.npm-cache\_logs\2026-04-25T14_48_44_209Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify mark retired [
+14 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\acorn',
+14 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn',
+14 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn.cmd',
+14 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn.ps1'
+14 silly reify ]
+15 silly reify mark retired [
+15 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint',
+15 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint',
+15 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint.cmd',
+15 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint.ps1'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\semver',
+16 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver',
+16 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver.cmd',
+16 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver.ps1'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\semver',
+17 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver',
+17 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver.cmd',
+17 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver.ps1'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\resolve',
+18 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve',
+18 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.cmd',
+18 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.ps1'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\jiti',
+19 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti',
+19 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti.cmd',
+19 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti.ps1'
+19 silly reify ]
+20 silly reify mark retired [
+20 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\js-yaml',
+20 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml',
+20 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml.cmd',
+20 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml.ps1'
+20 silly reify ]
+21 silly reify mark retired [
+21 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\json5',
+21 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5',
+21 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5.cmd',
+21 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5.ps1'
+21 silly reify ]
+22 silly reify mark retired [
+22 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\loose-envify',
+22 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify',
+22 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify.cmd',
+22 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify.ps1'
+22 silly reify ]
+23 silly reify mark retired [
+23 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\napi-postinstall',
+23 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall',
+23 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall.cmd',
+23 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall.ps1'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\mkdirp',
+24 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp',
+24 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp.cmd',
+24 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp.ps1'
+24 silly reify ]
+25 silly reify mark retired [
+25 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\nanoid',
+25 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid',
+25 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid.cmd',
+25 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid.ps1'
+25 silly reify ]
+26 silly reify mark retired [
+26 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\next',
+26 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next',
+26 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next.cmd',
+26 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next.ps1'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\resolve',
+27 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve',
+27 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve.cmd',
+27 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve.ps1'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\semver',
+28 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver',
+28 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver.cmd',
+28 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver.ps1'
+28 silly reify ]
+29 silly reify mark retired [
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\typescript',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc.cmd',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc.ps1',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver.cmd',
+29 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver.ps1'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\which',
+30 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which',
+30 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which.cmd',
+30 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which.ps1'
+30 silly reify ]
+31 silly reify moves {
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\acorn': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.acorn-iw5gDAtU',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.acorn-KH0zPqXl',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.acorn.cmd-hd4NAgTX',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\acorn.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.acorn.ps1-b7fm19aO',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.eslint-yiejPxMw',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.eslint-s686EEHc',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.eslint.cmd-b4Ls6yMi',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\eslint.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.eslint.ps1-ytdGRDOB',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.semver-y1f9Wxw1',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\.semver-PIcv5VEW',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\.semver.cmd-yddLJFgd',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\semver.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-import\\node_modules\\.bin\\.semver.ps1-eFC2rGFZ',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.semver-lUrtZuNW',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.semver-oTx4tYYD',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.semver.cmd-GGxvkYsq',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\semver.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.semver.ps1-IeCpU5Ac',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\resolve': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.resolve-Tm6NPf22',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.resolve-mSowhYfY',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.resolve.cmd-ZpKSfepr',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\resolve.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\eslint-plugin-react\\node_modules\\.bin\\.resolve.ps1-rqsEyB6i',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\jiti': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.jiti-tS6VtNgD',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.jiti-KFzI8b39',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.jiti.cmd-G0LV9a2G',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\jiti.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.jiti.ps1-fczHEzXP',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\js-yaml': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.js-yaml-qeDf7brV',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.js-yaml-OV3ZJ7ny',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.js-yaml.cmd-loL0SVfO',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\js-yaml.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.js-yaml.ps1-LDoo1arW',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\json5': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.json5-RrnAFJqm',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.json5-QMiMDPE9',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.json5.cmd-49Ymzssv',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\json5.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.json5.ps1-MiXSj8f8',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\loose-envify': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.loose-envify-sg7t4JKd',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.loose-envify-0ZUABAtR',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.loose-envify.cmd-g0m9COWa',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\loose-envify.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.loose-envify.ps1-s3xm7b4j',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\napi-postinstall': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.napi-postinstall-aoraZ8ll',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.napi-postinstall-YmQc7iyc',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.napi-postinstall.cmd-8Xh4CqVp',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\napi-postinstall.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.napi-postinstall.ps1-9oaARIjX',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\mkdirp': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.mkdirp-RDjcgzz0',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.mkdirp-iK8ItdpD',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.mkdirp.cmd-8wFvBN5B',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\mkdirp.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.mkdirp.ps1-AYcCQA9Y',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\nanoid': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.nanoid-dkJXYRnY',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.nanoid-dE1m65Vc',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.nanoid.cmd-ooHmaH7f',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\nanoid.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.nanoid.ps1-eZLPlDlF',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\next': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.next-CIi4IRVZ',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.next-40jvB3Ch',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.next.cmd-1On5qqZ5',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\next.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.next.ps1-cevThweB',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\resolve': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.resolve-dvmXWIle',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.resolve-zkMGap8d',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.resolve.cmd-a7R0zzOq',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\resolve.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.resolve.ps1-4Bgol8NS',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.semver-HUgwhG9K',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.semver-R4sB2Eg4',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.semver.cmd-hddLJTa8',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\semver.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.semver.ps1-f1Unz2Oo',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\typescript': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.typescript-Vp3hrMOh',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsc-0pyDPMFG',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsc.cmd-JBFio9Jg',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsc.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsc.ps1-jDGAEieC',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsserver-Zagm2N4H',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsserver.cmd-m5dEuihp',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\tsserver.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.tsserver.ps1-Q4OzUhUk',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\which': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.which-yRWwTB9Q',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.node-which-1gPEBQdH',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which.cmd': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.node-which.cmd-i4qPd4LR',
+31 silly reify   'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\node-which.ps1': 'C:\\Users\\loq\\OneDrive\\Documents\\Desktop\\Archive\\Nextjs-Course-2026-master\\Fullstack-Projects\\leetcode\\node_modules\\.bin\\.node-which.ps1-QmP47aCJ'
+31 silly reify }
+32 silly audit bulk request {
+32 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+32 silly audit   '@babel/runtime': [ '7.28.4' ],
+32 silly audit   '@clerk/backend': [ '2.13.0' ],
+32 silly audit   '@clerk/clerk-react': [ '5.46.2' ],
+32 silly audit   '@clerk/nextjs': [ '6.31.10' ],
+32 silly audit   '@clerk/shared': [ '3.24.2' ],
+32 silly audit   '@clerk/types': [ '4.85.0' ],
+32 silly audit   '@date-fns/tz': [ '1.4.1' ],
+32 silly audit   '@emnapi/core': [ '1.5.0' ],
+32 silly audit   '@emnapi/runtime': [ '1.5.0' ],
+32 silly audit   '@emnapi/wasi-threads': [ '1.1.0' ],
+32 silly audit   '@eslint-community/eslint-utils': [ '4.9.0' ],
+32 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.1' ],
+32 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+32 silly audit   '@eslint/config-array': [ '0.21.0' ],
+32 silly audit   '@eslint/config-helpers': [ '0.3.1' ],
+32 silly audit   '@eslint/core': [ '0.15.2' ],
+32 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+32 silly audit   '@eslint/js': [ '9.35.0' ],
+32 silly audit   '@eslint/object-schema': [ '2.1.6' ],
+32 silly audit   '@eslint/plugin-kit': [ '0.3.5' ],
+32 silly audit   '@floating-ui/core': [ '1.7.3' ],
+32 silly audit   '@floating-ui/dom': [ '1.7.4' ],
+32 silly audit   '@floating-ui/react-dom': [ '2.1.6' ],
+32 silly audit   '@floating-ui/utils': [ '0.2.10' ],
+32 silly audit   '@hookform/resolvers': [ '5.2.1' ],
+32 silly audit   '@humanfs/core': [ '0.19.1' ],
+32 silly audit   '@humanfs/node': [ '0.16.7' ],
+32 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+32 silly audit   '@humanwhocodes/retry': [ '0.4.3' ],
+32 silly audit   '@img/sharp-darwin-arm64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-darwin-x64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.0' ],
+32 silly audit   '@img/sharp-linux-arm': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linux-arm64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linux-ppc64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linux-s390x': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linux-x64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-wasm32': [ '0.34.3' ],
+32 silly audit   '@img/sharp-win32-arm64': [ '0.34.3' ],
+32 silly audit   '@img/sharp-win32-ia32': [ '0.34.3' ],
+32 silly audit   '@img/sharp-win32-x64': [ '0.34.3' ],
+32 silly audit   '@isaacs/fs-minipass': [ '4.0.1' ],
+32 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+32 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+32 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+32 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+32 silly audit   '@jridgewell/trace-mapping': [ '0.3.30' ],
+32 silly audit   '@monaco-editor/loader': [ '1.5.0' ],
+32 silly audit   '@monaco-editor/react': [ '4.7.0' ],
+32 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+32 silly audit   '@next/env': [ '15.5.2' ],
+32 silly audit   '@next/eslint-plugin-next': [ '15.5.2' ],
+32 silly audit   '@next/swc-darwin-arm64': [ '15.5.2' ],
+32 silly audit   '@next/swc-darwin-x64': [ '15.5.2' ],
+32 silly audit   '@next/swc-linux-arm64-gnu': [ '15.5.2' ],
+32 silly audit   '@next/swc-linux-arm64-musl': [ '15.5.2' ],
+32 silly audit   '@next/swc-linux-x64-gnu': [ '15.5.2' ],
+32 silly audit   '@next/swc-linux-x64-musl': [ '15.5.2' ],
+32 silly audit   '@next/swc-win32-arm64-msvc': [ '15.5.2' ],
+32 silly audit   '@next/swc-win32-x64-msvc': [ '15.5.2' ],
+32 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+32 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+32 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+32 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+32 silly audit   '@prisma/client': [ '6.15.0' ],
+32 silly audit   '@radix-ui/number': [ '1.1.1' ],
+32 silly audit   '@radix-ui/primitive': [ '1.1.3' ],
+32 silly audit   '@radix-ui/react-accordion': [ '1.2.12' ],
+32 silly audit   '@radix-ui/react-alert-dialog': [ '1.1.15' ],
+32 silly audit   '@radix-ui/react-arrow': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-aspect-ratio': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-avatar': [ '1.1.10' ],
+32 silly audit   '@radix-ui/react-checkbox': [ '1.3.3' ],
+32 silly audit   '@radix-ui/react-collapsible': [ '1.1.12' ],
+32 silly audit   '@radix-ui/react-collection': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+32 silly audit   '@radix-ui/react-context': [ '1.1.2' ],
+32 silly audit   '@radix-ui/react-context-menu': [ '2.2.16' ],
+32 silly audit   '@radix-ui/react-dialog': [ '1.1.15' ],
+32 silly audit   '@radix-ui/react-direction': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.11' ],
+32 silly audit   '@radix-ui/react-dropdown-menu': [ '2.1.16' ],
+32 silly audit   '@radix-ui/react-focus-guards': [ '1.1.3' ],
+32 silly audit   '@radix-ui/react-focus-scope': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-hover-card': [ '1.1.15' ],
+32 silly audit   '@radix-ui/react-id': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-label': [ '2.1.7' ],
+32 silly audit   '@radix-ui/react-menu': [ '2.1.16' ],
+32 silly audit   '@radix-ui/react-menubar': [ '1.1.16' ],
+32 silly audit   '@radix-ui/react-navigation-menu': [ '1.2.14' ],
+32 silly audit   '@radix-ui/react-popover': [ '1.1.15' ],
+32 silly audit   '@radix-ui/react-popper': [ '1.2.8' ],
+32 silly audit   '@radix-ui/react-portal': [ '1.1.9' ],
+32 silly audit   '@radix-ui/react-presence': [ '1.1.5' ],
+32 silly audit   '@radix-ui/react-primitive': [ '2.1.3' ],
+32 silly audit   '@radix-ui/react-progress': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-radio-group': [ '1.3.8' ],
+32 silly audit   '@radix-ui/react-roving-focus': [ '1.1.11' ],
+32 silly audit   '@radix-ui/react-scroll-area': [ '1.2.10' ],
+32 silly audit   '@radix-ui/react-select': [ '2.2.6' ],
+32 silly audit   '@radix-ui/react-separator': [ '1.1.7' ],
+32 silly audit   '@radix-ui/react-slider': [ '1.3.6' ],
+32 silly audit   '@radix-ui/react-slot': [ '1.2.3' ],
+32 silly audit   '@radix-ui/react-switch': [ '1.2.6' ],
+32 silly audit   '@radix-ui/react-tabs': [ '1.1.13' ],
+32 silly audit   '@radix-ui/react-toggle': [ '1.1.10' ],
+32 silly audit   '@radix-ui/react-toggle-group': [ '1.1.11' ],
+32 silly audit   '@radix-ui/react-tooltip': [ '1.2.8' ],
+32 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-use-controllable-state': [ '1.2.2' ],
+32 silly audit   '@radix-ui/react-use-effect-event': [ '0.0.2' ],
+32 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-use-is-hydrated': [ '0.1.0' ],
+32 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-use-previous': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-use-rect': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-use-size': [ '1.1.1' ],
+32 silly audit   '@radix-ui/react-visually-hidden': [ '1.2.3' ],
+32 silly audit   '@radix-ui/rect': [ '1.1.1' ],
+32 silly audit   '@rtsao/scc': [ '1.1.0' ],
+32 silly audit   '@rushstack/eslint-patch': [ '1.12.0' ],
+32 silly audit   '@stablelib/base64': [ '1.0.1' ],
+32 silly audit   '@standard-schema/utils': [ '0.3.0' ],
+32 silly audit   '@swc/helpers': [ '0.5.15' ],
+32 silly audit   '@tailwindcss/node': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.13' ],
+32 silly audit   '@tailwindcss/postcss': [ '4.1.13' ],
+32 silly audit   '@tybys/wasm-util': [ '0.10.0' ],
+32 silly audit   '@types/d3-array': [ '3.2.1' ],
+32 silly audit   '@types/d3-color': [ '3.1.3' ],
+32 silly audit   '@types/d3-ease': [ '3.0.2' ],
+32 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+32 silly audit   '@types/d3-path': [ '3.1.1' ],
+32 silly audit   '@types/d3-scale': [ '4.0.9' ],
+32 silly audit   '@types/d3-shape': [ '3.1.7' ],
+32 silly audit   '@types/d3-time': [ '3.0.4' ],
+32 silly audit   '@types/d3-timer': [ '3.0.2' ],
+32 silly audit   '@types/estree': [ '1.0.8' ],
+32 silly audit   '@types/json-schema': [ '7.0.15' ],
+32 silly audit   '@types/json5': [ '0.0.29' ],
+32 silly audit   '@types/node': [ '24.3.1' ],
+32 silly audit   '@types/react': [ '19.1.12' ],
+32 silly audit   '@types/trusted-types': [ '1.0.6' ],
+32 silly audit   '@typescript-eslint/eslint-plugin': [ '8.43.0' ],
+32 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+32 silly audit   '@typescript-eslint/parser': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/project-service': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/scope-manager': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/type-utils': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/types': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/typescript-estree': [ '8.43.0' ],
+32 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+32 silly audit   'fast-glob': [ '3.3.3', '3.3.1' ],
+32 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+32 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+32 silly audit   '@typescript-eslint/utils': [ '8.43.0' ],
+32 silly audit   '@typescript-eslint/visitor-keys': [ '8.43.0' ],
+32 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+32 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+32 silly audit   acorn: [ '8.15.0' ],
+32 silly audit   'acorn-jsx': [ '5.3.2' ],
+32 silly audit   ajv: [ '6.12.6' ],
+32 silly audit   'ansi-styles': [ '4.3.0' ],
+32 silly audit   argparse: [ '2.0.1' ],
+32 silly audit   'aria-hidden': [ '1.2.6' ],
+32 silly audit   'aria-query': [ '5.3.2' ],
+32 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+32 silly audit   'array-includes': [ '3.1.9' ],
+32 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+32 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+32 silly audit   'array.prototype.flat': [ '1.3.3' ],
+32 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+32 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+32 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+32 silly audit   'ast-types-flow': [ '0.0.8' ],
+32 silly audit   'async-function': [ '1.0.0' ],
+32 silly audit   asynckit: [ '0.4.0' ],
+32 silly audit   'available-typed-arrays': [ '1.0.7' ],
+32 silly audit   'axe-core': [ '4.10.3' ],
+32 silly audit   axios: [ '1.11.0' ],
+32 silly audit   'axobject-query': [ '4.1.0' ],
+32 silly audit   'balanced-match': [ '1.0.2' ],
+32 silly audit   braces: [ '3.0.3' ],
+32 silly audit   'call-bind': [ '1.0.8' ],
+32 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+32 silly audit   'call-bound': [ '1.0.4' ],
+32 silly audit   callsites: [ '3.1.0' ],
+32 silly audit   'caniuse-lite': [ '1.0.30001741' ],
+32 silly audit   chalk: [ '4.1.2' ],
+32 silly audit   chownr: [ '3.0.0' ],
+32 silly audit   'class-variance-authority': [ '0.7.1' ],
+32 silly audit   'client-only': [ '0.0.1' ],
+32 silly audit   clsx: [ '2.1.1' ],
+32 silly audit   cmdk: [ '1.1.1' ],
+32 silly audit   color: [ '4.2.3' ],
+32 silly audit   'color-convert': [ '2.0.1' ],
+32 silly audit   'color-name': [ '1.1.4' ],
+32 silly audit   'color-string': [ '1.9.1' ],
+32 silly audit   'combined-stream': [ '1.0.8' ],
+32 silly audit   'concat-map': [ '0.0.1' ],
+32 silly audit   cookie: [ '1.0.2' ],
+32 silly audit   'cross-spawn': [ '7.0.6' ],
+32 silly audit   csstype: [ '3.1.3' ],
+32 silly audit   'd3-array': [ '3.2.4' ],
+32 silly audit   'd3-color': [ '3.1.0' ],
+32 silly audit   'd3-ease': [ '3.0.1' ],
+32 silly audit   'd3-format': [ '3.1.0' ],
+32 silly audit   'd3-interpolate': [ '3.0.1' ],
+32 silly audit   'd3-path': [ '3.1.0' ],
+32 silly audit   'd3-scale': [ '4.0.2' ],
+32 silly audit   'd3-shape': [ '3.2.0' ],
+32 silly audit   'd3-time': [ '3.1.0' ],
+32 silly audit   'd3-time-format': [ '4.1.0' ],
+32 silly audit   'd3-timer': [ '3.0.1' ],
+32 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+32 silly audit   'data-view-buffer': [ '1.0.2' ],
+32 silly audit   'data-view-byte-length': [ '1.0.2' ],
+32 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+32 silly audit   'date-fns': [ '4.1.0' ],
+32 silly audit   'date-fns-jalali': [ '4.1.0-0' ],
+32 silly audit   debug: [ '4.4.1', '3.2.7' ],
+32 silly audit   'decimal.js-light': [ '2.5.1' ],
+32 silly audit   'deep-is': [ '0.1.4' ],
+32 silly audit   'define-data-property': [ '1.1.4' ],
+32 silly audit   'define-properties': [ '1.2.1' ],
+32 silly audit   'delayed-stream': [ '1.0.0' ],
+32 silly audit   dequal: [ '2.0.3' ],
+32 silly audit   'detect-libc': [ '2.0.4' ],
+32 silly audit   'detect-node-es': [ '1.1.0' ],
+32 silly audit   doctrine: [ '2.1.0' ],
+32 silly audit   'dom-helpers': [ '5.2.1' ],
+32 silly audit   'dunder-proto': [ '1.0.1' ],
+32 silly audit   'embla-carousel': [ '8.6.0' ],
+32 silly audit   'embla-carousel-react': [ '8.6.0' ],
+32 silly audit   'embla-carousel-reactive-utils': [ '8.6.0' ],
+32 silly audit   'emoji-regex': [ '9.2.2' ],
+32 silly audit   'enhanced-resolve': [ '5.18.3' ],
+32 silly audit   'es-abstract': [ '1.24.0' ],
+32 silly audit   'es-define-property': [ '1.0.1' ],
+32 silly audit   'es-errors': [ '1.3.0' ],
+32 silly audit   'es-iterator-helpers': [ '1.2.1' ],
+32 silly audit   'es-object-atoms': [ '1.1.1' ],
+32 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+32 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+32 silly audit   'es-to-primitive': [ '1.3.0' ],
+32 silly audit   'escape-string-regexp': [ '4.0.0' ],
+32 silly audit   eslint: [ '9.35.0' ],
+32 silly audit   'eslint-config-next': [ '15.5.2' ],
+32 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+32 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+32 silly audit   'eslint-module-utils': [ '2.12.1' ],
+32 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+32 silly audit   semver: [ '6.3.1', '7.7.2' ],
+32 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+32 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+32 silly audit   'eslint-plugin-react-hooks': [ '5.2.0' ],
+32 silly audit   resolve: [ '2.0.0-next.5', '1.22.10' ],
+32 silly audit   'eslint-scope': [ '8.4.0' ],
+32 silly audit   espree: [ '10.4.0' ],
+32 silly audit   esquery: [ '1.6.0' ],
+32 silly audit   esrecurse: [ '4.3.0' ],
+32 silly audit   estraverse: [ '5.3.0' ],
+32 silly audit   esutils: [ '2.0.3' ],
+32 silly audit   eventemitter3: [ '4.0.7' ],
+32 silly audit   'fast-deep-equal': [ '3.1.3' ],
+32 silly audit   'fast-equals': [ '5.2.2' ],
+32 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+32 silly audit   'fast-levenshtein': [ '2.0.6' ],
+32 silly audit   'fast-sha256': [ '1.3.0' ],
+32 silly audit   fastq: [ '1.19.1' ],
+32 silly audit   'file-entry-cache': [ '8.0.0' ],
+32 silly audit   'fill-range': [ '7.1.1' ],
+32 silly audit   'find-up': [ '5.0.0' ],
+32 silly audit   'flat-cache': [ '4.0.1' ],
+32 silly audit   flatted: [ '3.3.3' ],
+32 silly audit   'follow-redirects': [ '1.15.11' ],
+32 silly audit   'for-each': [ '0.3.5' ],
+32 silly audit   'form-data': [ '4.0.4' ],
+32 silly audit   'function-bind': [ '1.1.2' ],
+32 silly audit   'function.prototype.name': [ '1.1.8' ],
+32 silly audit   'functions-have-names': [ '1.2.3' ],
+32 silly audit   'get-intrinsic': [ '1.3.0' ],
+32 silly audit   'get-nonce': [ '1.0.1' ],
+32 silly audit   'get-proto': [ '1.0.1' ],
+32 silly audit   'get-symbol-description': [ '1.1.0' ],
+32 silly audit   'get-tsconfig': [ '4.10.1' ],
+32 silly audit   'glob-to-regexp': [ '0.4.1' ],
+32 silly audit   globals: [ '14.0.0' ],
+32 silly audit   globalthis: [ '1.0.4' ],
+32 silly audit   gopd: [ '1.2.0' ],
+32 silly audit   'graceful-fs': [ '4.2.11' ],
+32 silly audit   graphemer: [ '1.4.0' ],
+32 silly audit   'has-bigints': [ '1.1.0' ],
+32 silly audit   'has-flag': [ '4.0.0' ],
+32 silly audit   'has-property-descriptors': [ '1.0.2' ],
+32 silly audit   'has-proto': [ '1.2.0' ],
+32 silly audit   'has-symbols': [ '1.1.0' ],
+32 silly audit   'has-tostringtag': [ '1.0.2' ],
+32 silly audit   hasown: [ '2.0.2' ],
+32 silly audit   'import-fresh': [ '3.3.1' ],
+32 silly audit   imurmurhash: [ '0.1.4' ],
+32 silly audit   'input-otp': [ '1.4.2' ],
+32 silly audit   'internal-slot': [ '1.1.0' ],
+32 silly audit   internmap: [ '2.0.3' ],
+32 silly audit   'is-array-buffer': [ '3.0.5' ],
+32 silly audit   'is-arrayish': [ '0.3.2' ],
+32 silly audit   'is-async-function': [ '2.1.1' ],
+32 silly audit   'is-bigint': [ '1.1.0' ],
+32 silly audit   'is-boolean-object': [ '1.2.2' ],
+32 silly audit   'is-bun-module': [ '2.0.0' ],
+32 silly audit   'is-callable': [ '1.2.7' ],
+32 silly audit   'is-core-module': [ '2.16.1' ],
+32 silly audit   'is-data-view': [ '1.0.2' ],
+32 silly audit   'is-date-object': [ '1.1.0' ],
+32 silly audit   'is-extglob': [ '2.1.1' ],
+32 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+32 silly audit   'is-generator-function': [ '1.1.0' ],
+32 silly audit   'is-glob': [ '4.0.3' ],
+32 silly audit   'is-map': [ '2.0.3' ],
+32 silly audit   'is-negative-zero': [ '2.0.3' ],
+32 silly audit   'is-number': [ '7.0.0' ],
+32 silly audit   'is-number-object': [ '1.1.1' ],
+32 silly audit   'is-regex': [ '1.2.1' ],
+32 silly audit   'is-set': [ '2.0.3' ],
+32 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+32 silly audit   'is-string': [ '1.1.1' ],
+32 silly audit   'is-symbol': [ '1.1.1' ],
+32 silly audit   'is-typed-array': [ '1.1.15' ],
+32 silly audit   'is-weakmap': [ '2.0.2' ],
+32 silly audit   'is-weakref': [ '1.1.1' ],
+32 silly audit   'is-weakset': [ '2.0.4' ],
+32 silly audit   isarray: [ '2.0.5' ],
+32 silly audit   isexe: [ '2.0.0' ],
+32 silly audit   'iterator.prototype': [ '1.1.5' ],
+32 silly audit   jiti: [ '2.5.1' ],
+32 silly audit   'js-cookie': [ '3.0.5' ],
+32 silly audit   'js-tokens': [ '4.0.0' ],
+32 silly audit   'js-yaml': [ '4.1.0' ],
+32 silly audit   'json-buffer': [ '3.0.1' ],
+32 silly audit   'json-schema-traverse': [ '0.4.1' ],
+32 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+32 silly audit   json5: [ '1.0.2' ],
+32 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+32 silly audit   keyv: [ '4.5.4' ],
+32 silly audit   'language-subtag-registry': [ '0.3.23' ],
+32 silly audit   'language-tags': [ '1.0.9' ],
+32 silly audit   levn: [ '0.4.1' ],
+32 silly audit   lightningcss: [ '1.30.1' ],
+32 silly audit   'lightningcss-darwin-arm64': [ '1.30.1' ],
+32 silly audit   'lightningcss-darwin-x64': [ '1.30.1' ],
+32 silly audit   'lightningcss-freebsd-x64': [ '1.30.1' ],
+32 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.1' ],
+32 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.1' ],
+32 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.1' ],
+32 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.1' ],
+32 silly audit   'lightningcss-linux-x64-musl': [ '1.30.1' ],
+32 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.1' ],
+32 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.1' ],
+32 silly audit   'locate-path': [ '6.0.0' ],
+32 silly audit   lodash: [ '4.17.21' ],
+32 silly audit   'lodash.merge': [ '4.6.2' ],
+32 silly audit   'loose-envify': [ '1.4.0' ],
+32 silly audit   'lucide-react': [ '0.543.0' ],
+32 silly audit   'magic-string': [ '0.30.19' ],
+32 silly audit   'math-intrinsics': [ '1.1.0' ],
+32 silly audit   merge2: [ '1.4.1' ],
+32 silly audit   micromatch: [ '4.0.8' ],
+32 silly audit   'mime-db': [ '1.52.0' ],
+32 silly audit   'mime-types': [ '2.1.35' ],
+32 silly audit   minimist: [ '1.2.8' ],
+32 silly audit   minipass: [ '7.1.2' ],
+32 silly audit   minizlib: [ '3.0.2' ],
+32 silly audit   mkdirp: [ '3.0.1' ],
+32 silly audit   'monaco-editor': [ '0.53.0' ],
+32 silly audit   ms: [ '2.1.3' ],
+32 silly audit   nanoid: [ '3.3.11' ],
+32 silly audit   'napi-postinstall': [ '0.3.3' ],
+32 silly audit   'natural-compare': [ '1.4.0' ],
+32 silly audit   next: [ '15.5.2' ],
+32 silly audit   'next-themes': [ '0.4.6' ],
+32 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+32 silly audit   'object-assign': [ '4.1.1' ],
+32 silly audit   'object-inspect': [ '1.13.4' ],
+32 silly audit   'object-keys': [ '1.1.1' ],
+32 silly audit   'object.assign': [ '4.1.7' ],
+32 silly audit   'object.entries': [ '1.1.9' ],
+32 silly audit   'object.fromentries': [ '2.0.8' ],
+32 silly audit   'object.groupby': [ '1.0.3' ],
+32 silly audit   'object.values': [ '1.2.1' ],
+32 silly audit   optionator: [ '0.9.4' ],
+32 silly audit   'own-keys': [ '1.0.1' ],
+32 silly audit   'p-limit': [ '3.1.0' ],
+32 silly audit   'p-locate': [ '5.0.0' ],
+32 silly audit   'parent-module': [ '1.0.1' ],
+32 silly audit   'path-exists': [ '4.0.0' ],
+32 silly audit   'path-key': [ '3.1.1' ],
+32 silly audit   'path-parse': [ '1.0.7' ],
+32 silly audit   picocolors: [ '1.1.1' ],
+32 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+32 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+32 silly audit   'prelude-ls': [ '1.2.1' ],
+32 silly audit   'prop-types': [ '15.8.1' ],
+32 silly audit   'proxy-from-env': [ '1.1.0' ],
+32 silly audit   punycode: [ '2.3.1' ],
+32 silly audit   'queue-microtask': [ '1.2.3' ],
+32 silly audit   react: [ '19.1.0' ],
+32 silly audit   'react-day-picker': [ '9.9.0' ],
+32 silly audit   'react-dom': [ '19.1.0' ],
+32 silly audit   'react-hook-form': [ '7.62.0' ],
+32 silly audit   'react-is': [ '16.13.1', '18.3.1' ],
+32 silly audit   'react-remove-scroll': [ '2.7.1' ],
+32 silly audit   'react-remove-scroll-bar': [ '2.3.8' ],
+32 silly audit   'react-resizable-panels': [ '3.0.5' ],
+32 silly audit   'react-smooth': [ '4.0.4' ],
+32 silly audit   'react-style-singleton': [ '2.2.3' ],
+32 silly audit   'react-transition-group': [ '4.4.5' ],
+32 silly audit   recharts: [ '2.15.4' ],
+32 silly audit   'recharts-scale': [ '0.4.5' ],
+32 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+32 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+32 silly audit   'resolve-from': [ '4.0.0' ],
+32 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+32 silly audit   reusify: [ '1.1.0' ],
+32 silly audit   'run-parallel': [ '1.2.0' ],
+32 silly audit   'safe-array-concat': [ '1.1.3' ],
+32 silly audit   'safe-push-apply': [ '1.0.0' ],
+32 silly audit   'safe-regex-test': [ '1.1.0' ],
+32 silly audit   scheduler: [ '0.26.0' ],
+32 silly audit   'server-only': [ '0.0.1' ],
+32 silly audit   'set-function-length': [ '1.2.2' ],
+32 silly audit   'set-function-name': [ '2.0.2' ],
+32 silly audit   'set-proto': [ '1.0.0' ],
+32 silly audit   sharp: [ '0.34.3' ],
+32 silly audit   'shebang-command': [ '2.0.0' ],
+32 silly audit   'shebang-regex': [ '3.0.0' ],
+32 silly audit   'side-channel': [ '1.1.0' ],
+32 silly audit   'side-channel-list': [ '1.0.0' ],
+32 silly audit   'side-channel-map': [ '1.0.1' ],
+32 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+32 silly audit   'simple-swizzle': [ '0.2.2' ],
+32 silly audit   sonner: [ '2.0.7' ],
+32 silly audit   'source-map-js': [ '1.2.1' ],
+32 silly audit   'stable-hash': [ '0.0.5' ],
+32 silly audit   standardwebhooks: [ '1.0.0' ],
+32 silly audit   'state-local': [ '1.0.7' ],
+32 silly audit   'std-env': [ '3.9.0' ],
+32 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+32 silly audit   'string.prototype.includes': [ '2.0.1' ],
+32 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+32 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+32 silly audit   'string.prototype.trim': [ '1.2.10' ],
+32 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+32 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+32 silly audit   'strip-bom': [ '3.0.0' ],
+32 silly audit   'strip-json-comments': [ '3.1.1' ],
+32 silly audit   'styled-jsx': [ '5.1.6' ],
+32 silly audit   'supports-color': [ '7.2.0' ],
+32 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+32 silly audit   swr: [ '2.3.4' ],
+32 silly audit   'tailwind-merge': [ '3.3.1' ],
+32 silly audit   tailwindcss: [ '4.1.13' ],
+32 silly audit   tapable: [ '2.2.3' ],
+32 silly audit   tar: [ '7.4.3' ],
+32 silly audit   'tiny-invariant': [ '1.3.3' ],
+32 silly audit   tinyglobby: [ '0.2.15' ],
+32 silly audit   fdir: [ '6.5.0' ],
+32 silly audit   'to-regex-range': [ '5.0.1' ],
+32 silly audit   'ts-api-utils': [ '2.1.0' ],
+32 silly audit   'tsconfig-paths': [ '3.15.0' ],
+32 silly audit   tslib: [ '2.8.1' ],
+32 silly audit   'tw-animate-css': [ '1.3.8' ],
+32 silly audit   'type-check': [ '0.4.0' ],
+32 silly audit   'typed-array-buffer': [ '1.0.3' ],
+32 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+32 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+32 silly audit   'typed-array-length': [ '1.0.7' ],
+32 silly audit   typescript: [ '5.9.2' ],
+32 silly audit   'unbox-primitive': [ '1.1.0' ],
+32 silly audit   'undici-types': [ '7.10.0' ],
+32 silly audit   'unrs-resolver': [ '1.11.1' ],
+32 silly audit   'uri-js': [ '4.4.1' ],
+32 silly audit   'use-callback-ref': [ '1.3.3' ],
+32 silly audit   'use-sidecar': [ '1.1.3' ],
+32 silly audit   'use-sync-external-store': [ '1.5.0' ],
+32 silly audit   vaul: [ '1.1.2' ],
+32 silly audit   'victory-vendor': [ '36.9.2' ],
+32 silly audit   which: [ '2.0.2' ],
+32 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+32 silly audit   'which-builtin-type': [ '1.2.1' ],
+32 silly audit   'which-collection': [ '1.0.2' ],
+32 silly audit   'which-typed-array': [ '1.1.19' ],
+32 silly audit   'word-wrap': [ '1.2.5' ],
+32 silly audit   yallist: [ '5.0.0' ],
+32 silly audit   'yocto-queue': [ '0.1.0' ],
+32 silly audit   zod: [ '4.1.5' ]
+32 silly audit }
+33 http cache which@https://registry.npmjs.org/which/-/which-2.0.2.tgz 1ms (cache hit)
+34 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.2.tgz 0ms (cache hit)
+35 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.2.tgz 0ms (cache hit)
+36 http cache mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-3.0.1.tgz 0ms (cache hit)
+37 http cache resolve@https://registry.npmjs.org/resolve/-/resolve-1.22.10.tgz 0ms (cache hit)
+38 http cache next@https://registry.npmjs.org/next/-/next-15.5.2.tgz 0ms (cache hit)
+39 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 0ms (cache hit)
+40 http cache json5@https://registry.npmjs.org/json5/-/json5-1.0.2.tgz 0ms (cache hit)
+41 http cache napi-postinstall@https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.3.tgz 0ms (cache hit)
+42 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 1ms (cache hit)
+43 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.5.1.tgz 0ms (cache hit)
+44 http cache js-yaml@https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz 0ms (cache hit)
+45 http cache semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+46 http cache semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+47 http cache resolve@https://registry.npmjs.org/resolve/-/resolve-2.0.0-next.5.tgz 0ms (cache hit)
+48 http cache eslint@https://registry.npmjs.org/eslint/-/eslint-9.35.0.tgz 0ms (cache hit)
+49 http cache acorn@https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz 0ms (cache hit)
+50 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 908ms
+51 silly audit report {
+51 silly audit report   '@clerk/nextjs': [
+51 silly audit report     {
+51 silly audit report       id: 1116853,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-vqx2-fgx2-5wq9',
+51 silly audit report       title: 'Official Clerk JavaScript SDKs: Middleware-based route protection bypass',
+51 silly audit report       severity: 'critical',
+51 silly audit report       vulnerable_versions: '>=6.0.0-snapshot.vb87a27f <6.39.2',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   '@clerk/shared': [
+51 silly audit report     {
+51 silly audit report       id: 1116848,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-vqx2-fgx2-5wq9',
+51 silly audit report       title: 'Official Clerk JavaScript SDKs: Middleware-based route protection bypass',
+51 silly audit report       severity: 'critical',
+51 silly audit report       vulnerable_versions: '>=3.0.0-canary.v20250225091530 <3.47.4',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   'brace-expansion': [
+51 silly audit report     {
+51 silly audit report       id: 1115540,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-f886-m6hf-6m8v',
+51 silly audit report       title: 'brace-expansion: Zero-step sequence causes process hang and memory exhaustion',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<1.1.13',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115541,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-f886-m6hf-6m8v',
+51 silly audit report       title: 'brace-expansion: Zero-step sequence causes process hang and memory exhaustion',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=2.0.0 <2.0.3',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   minimatch: [
+51 silly audit report     {
+51 silly audit report       id: 1113459,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+51 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<3.1.3',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113465,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+51 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.6',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113538,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-7r86-cg39-jmmj',
+51 silly audit report       title: 'minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<3.1.3',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113544,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-7r86-cg39-jmmj',
+51 silly audit report       title: 'minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.7',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113546,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-23c5-xmqv-rm74',
+51 silly audit report       title: 'minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<3.1.4',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113552,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-23c5-xmqv-rm74',
+51 silly audit report       title: 'minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.7',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   ajv: [
+51 silly audit report     {
+51 silly audit report       id: 1113714,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-2g4f-4pwh-qvx6',
+51 silly audit report       title: 'ajv has ReDoS when using `$data` option',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<6.14.0',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   axios: [
+51 silly audit report     {
+51 silly audit report       id: 1112195,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-4hjh-wcwx-xvwj',
+51 silly audit report       title: 'Axios is vulnerable to DoS attack through lack of data size check',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=1.0.0 <1.12.0',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113275,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-43fc-jf86-j433',
+51 silly audit report       title: 'Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=1.0.0 <=1.13.4',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1116673,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3p68-rc4w-qgx5',
+51 silly audit report       title: 'Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.0',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1116675,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-fvcv-3m26-pcqx',
+51 silly audit report       title: 'Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=1.0.0 <1.15.0',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   flatted: [
+51 silly audit report     {
+51 silly audit report       id: 1114526,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-25h7-pfq9-p65f',
+51 silly audit report       title: 'flatted vulnerable to unbounded recursion DoS in parse() revive phase',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<3.4.0',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115357,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-rf6f-7fwh-wjgh',
+51 silly audit report       title: 'Prototype Pollution via parse() in NodeJS flatted',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<=3.4.1',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   'follow-redirects': [
+51 silly audit report     {
+51 silly audit report       id: 1116560,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-r4q5-vmmm-2653',
+51 silly audit report       title: 'follow-redirects leaks Custom Authentication Headers to Cross-Domain Redirect Targets',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<=1.15.11',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   'js-yaml': [
+51 silly audit report     {
+51 silly audit report       id: 1112715,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-mh29-5h37-fv8m',
+51 silly audit report       title: 'js-yaml has prototype pollution in merge (<<)',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=4.0.0 <4.1.1',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   lodash: [
+51 silly audit report     {
+51 silly audit report       id: 1112455,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-xxjr-mmjv-4gpg',
+51 silly audit report       title: 'Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=4.0.0 <=4.17.22',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115806,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-r5fr-rjxr-66jc',
+51 silly audit report       title: 'lodash vulnerable to Code Injection via `_.template` imports key names',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=4.0.0 <=4.17.23',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115810,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-f23m-r3pf-42rh',
+51 silly audit report       title: 'lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<=4.17.23',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   next: [
+51 silly audit report     {
+51 silly audit report       id: 1111366,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-9qr9-h5gf-34mp',
+51 silly audit report       title: 'Next.js is vulnerable to RCE in React flight protocol',
+51 silly audit report       severity: 'critical',
+51 silly audit report       vulnerable_versions: '>=15.5.0-canary.0 <15.5.7',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1111376,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-w37m-7fhw-fmv9',
+51 silly audit report       title: 'Next Server Actions Source Code Exposure ',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=15.5.1-canary.0 <15.5.8',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1111385,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-mwv6-3258-q52c',
+51 silly audit report       title: 'Next Vulnerable to Denial of Service with Server Components',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=15.5.1-canary.0 <15.5.8',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1112593,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-9g9p-9gw9-jx7f',
+51 silly audit report       title: 'Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.10',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1112648,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-h25m-26qc-wcjf',
+51 silly audit report       title: 'Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=15.5.1-canary.0 <15.5.10',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1114897,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-ggv3-7p47-pfv8',
+51 silly audit report       title: 'Next.js: HTTP request smuggling in rewrites',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=9.5.0 <15.5.13',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1114940,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3x4c-7xq6-9pq8',
+51 silly audit report       title: 'Next.js: Unbounded next/image disk cache growth can exhaust storage',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.14',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1116376,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-q4gf-8mx6-v5v3',
+51 silly audit report       title: 'Next.js has a Denial of Service with Server Components',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.15',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   postcss: [
+51 silly audit report     {
+51 silly audit report       id: 1117015,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-qx2v-qp2m-jg93',
+51 silly audit report       title: 'PostCSS has XSS via Unescaped </style> in its CSS Stringify Output',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<8.5.10',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   picomatch: [
+51 silly audit report     {
+51 silly audit report       id: 1115549,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3v7f-55p6-f55p',
+51 silly audit report       title: 'Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '<2.3.2',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115551,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-3v7f-55p6-f55p',
+51 silly audit report       title: 'Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching',
+51 silly audit report       severity: 'moderate',
+51 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115552,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-c2c7-rcm5-vvqj',
+51 silly audit report       title: 'Picomatch has a ReDoS vulnerability via extglob quantifiers',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<2.3.2',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1115554,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-c2c7-rcm5-vvqj',
+51 silly audit report       title: 'Picomatch has a ReDoS vulnerability via extglob quantifiers',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ],
+51 silly audit report   tar: [
+51 silly audit report     {
+51 silly audit report       id: 1112659,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-34x7-hfp2-rc4v',
+51 silly audit report       title: 'node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<7.5.7',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113300,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-8qq5-rm4j-mr97',
+51 silly audit report       title: 'node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<=7.5.2',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1113375,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-83g3-92jg-28cx',
+51 silly audit report       title: 'Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<7.5.8',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1114200,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-qffp-2rhf-9h96',
+51 silly audit report       title: 'tar has Hardlink Path Traversal via Drive-Relative Linkpath',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<=7.5.9',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1114302,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-9ppj-qmqm-q256',
+51 silly audit report       title: 'node-tar Symlink Path Traversal via Drive-Relative Linkpath',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<=7.5.10',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     },
+51 silly audit report     {
+51 silly audit report       id: 1114680,
+51 silly audit report       url: 'https://github.com/advisories/GHSA-r6q2-hw4h-h46w',
+51 silly audit report       title: 'Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS',
+51 silly audit report       severity: 'high',
+51 silly audit report       vulnerable_versions: '<=7.5.3',
+51 silly audit report       cwe: [Array],
+51 silly audit report       cvss: [Object]
+51 silly audit report     }
+51 silly audit report   ]
+51 silly audit report }
+52 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fnextjs cache-miss
+53 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fshared cache-miss
+54 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion cache-miss
+55 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+56 silly packumentCache corgi:https://registry.npmjs.org/ajv cache-miss
+57 silly packumentCache corgi:https://registry.npmjs.org/axios cache-miss
+58 silly packumentCache corgi:https://registry.npmjs.org/flatted cache-miss
+59 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects cache-miss
+60 silly packumentCache corgi:https://registry.npmjs.org/js-yaml cache-miss
+61 silly packumentCache corgi:https://registry.npmjs.org/lodash cache-miss
+62 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+63 silly packumentCache corgi:https://registry.npmjs.org/postcss cache-miss
+64 silly packumentCache corgi:https://registry.npmjs.org/picomatch cache-miss
+65 silly packumentCache corgi:https://registry.npmjs.org/tar cache-miss
+66 http cache https://registry.npmjs.org/minimatch 51ms (cache hit)
+67 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:168441 disposed:false
+68 http cache https://registry.npmjs.org/brace-expansion 55ms (cache hit)
+69 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion set size:22573 disposed:false
+70 http cache https://registry.npmjs.org/postcss 53ms (cache hit)
+71 silly packumentCache corgi:https://registry.npmjs.org/postcss set size:340497 disposed:false
+72 http cache https://registry.npmjs.org/ajv 59ms (cache hit)
+73 silly packumentCache corgi:https://registry.npmjs.org/ajv set size:467559 disposed:false
+74 http cache https://registry.npmjs.org/follow-redirects 62ms (cache hit)
+75 silly packumentCache corgi:https://registry.npmjs.org/follow-redirects set size:88479 disposed:false
+76 http cache https://registry.npmjs.org/lodash 63ms (cache hit)
+77 silly packumentCache corgi:https://registry.npmjs.org/lodash set size:69555 disposed:false
+78 http cache https://registry.npmjs.org/axios 65ms (cache hit)
+79 silly packumentCache corgi:https://registry.npmjs.org/axios set size:285106 disposed:false
+80 http cache https://registry.npmjs.org/flatted 72ms (cache hit)
+81 silly packumentCache corgi:https://registry.npmjs.org/flatted set size:57858 disposed:false
+82 http cache https://registry.npmjs.org/tar 70ms (cache hit)
+83 silly packumentCache corgi:https://registry.npmjs.org/tar set size:199254 disposed:false
+84 http cache https://registry.npmjs.org/js-yaml 80ms (cache hit)
+85 silly packumentCache corgi:https://registry.npmjs.org/js-yaml set size:58533 disposed:false
+86 http cache https://registry.npmjs.org/@clerk%2fshared 91ms (cache hit)
+87 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fshared set size:5891596 disposed:false
+88 http cache https://registry.npmjs.org/@clerk%2fnextjs 149ms (cache hit)
+89 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fnextjs set size:7355569 disposed:false
+90 http cache https://registry.npmjs.org/next 253ms (cache hit)
+91 silly packumentCache corgi:https://registry.npmjs.org/next set size:24786150 disposed:false
+92 http cache https://registry.npmjs.org/picomatch 595ms (cache hit)
+93 silly packumentCache corgi:https://registry.npmjs.org/picomatch set size:44414 disposed:false
+94 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fbackend cache-miss
+95 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fclerk-react cache-miss
+96 http cache https://registry.npmjs.org/@clerk%2fbackend 67ms (cache hit)
+97 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fbackend set size:5974561 disposed:false
+98 http cache https://registry.npmjs.org/@clerk%2fclerk-react 140ms (cache hit)
+99 silly packumentCache corgi:https://registry.npmjs.org/@clerk%2fclerk-react set size:6177317 disposed:false
+100 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2fconfig-array cache-miss
+101 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2feslintrc cache-miss
+102 silly packumentCache corgi:https://registry.npmjs.org/eslint cache-miss
+103 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-import cache-miss
+104 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-jsx-a11y cache-miss
+105 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react cache-miss
+106 http cache https://registry.npmjs.org/@eslint%2fconfig-array 14ms (cache hit)
+107 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2fconfig-array set size:19036 disposed:false
+108 http cache https://registry.npmjs.org/@eslint%2feslintrc 15ms (cache hit)
+109 silly packumentCache corgi:https://registry.npmjs.org/@eslint%2feslintrc set size:83205 disposed:false
+110 http cache https://registry.npmjs.org/eslint-plugin-import 16ms (cache hit)
+111 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-import set size:238396 disposed:false
+112 http cache https://registry.npmjs.org/eslint-plugin-jsx-a11y 17ms (cache hit)
+113 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-jsx-a11y set size:108835 disposed:false
+114 http cache https://registry.npmjs.org/eslint 21ms (cache hit)
+115 silly packumentCache corgi:https://registry.npmjs.org/eslint set size:1151184 disposed:false
+116 http cache https://registry.npmjs.org/eslint-plugin-react 27ms (cache hit)
+117 silly packumentCache corgi:https://registry.npmjs.org/eslint-plugin-react set size:309843 disposed:false
+118 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree cache-miss
+119 http cache https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree 35ms (cache hit)
+120 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree set size:8603931 disposed:false
+121 silly packumentCache corgi:https://registry.npmjs.org/flat-cache cache-miss
+122 http cache https://registry.npmjs.org/flat-cache 7ms (cache hit)
+123 silly packumentCache corgi:https://registry.npmjs.org/flat-cache set size:50282 disposed:false
+124 silly packumentCache corgi:https://registry.npmjs.org/recharts cache-miss
+125 http cache https://registry.npmjs.org/recharts 10ms (cache hit)
+126 silly packumentCache corgi:https://registry.npmjs.org/recharts set size:785054 disposed:false
+127 silly packumentCache corgi:https://registry.npmjs.org/@tailwindcss%2fpostcss cache-miss
+128 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fpostcss 409ms (cache miss)
+129 silly packumentCache corgi:https://registry.npmjs.org/@tailwindcss%2fpostcss set size:undefined disposed:false
+130 silly packumentCache corgi:https://registry.npmjs.org/micromatch cache-miss
+131 http fetch GET 200 https://registry.npmjs.org/micromatch 71ms (cache miss)
+132 silly packumentCache corgi:https://registry.npmjs.org/micromatch set size:undefined disposed:false
+133 silly packumentCache corgi:https://registry.npmjs.org/tinyglobby cache-miss
+134 silly packumentCache corgi:https://registry.npmjs.org/fdir cache-miss
+135 http fetch GET 200 https://registry.npmjs.org/tinyglobby 52ms (cache miss)
+136 silly packumentCache corgi:https://registry.npmjs.org/tinyglobby set size:undefined disposed:false
+137 http fetch GET 200 https://registry.npmjs.org/fdir 182ms (cache miss)
+138 silly packumentCache corgi:https://registry.npmjs.org/fdir set size:undefined disposed:false
+139 silly packumentCache corgi:https://registry.npmjs.org/@tailwindcss%2foxide cache-miss
+140 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide 1136ms (cache miss)
+141 silly packumentCache corgi:https://registry.npmjs.org/@tailwindcss%2foxide set size:undefined disposed:false
+142 silly CHANGE node_modules/which
+143 silly CHANGE node_modules/typescript
+144 silly CHANGE node_modules/semver
+145 silly CHANGE node_modules/resolve
+146 silly CHANGE node_modules/next
+147 silly CHANGE node_modules/nanoid
+148 silly CHANGE node_modules/mkdirp
+149 silly CHANGE node_modules/napi-postinstall
+150 silly CHANGE node_modules/loose-envify
+151 silly CHANGE node_modules/json5
+152 silly CHANGE node_modules/js-yaml
+153 silly CHANGE node_modules/jiti
+154 silly CHANGE node_modules/eslint-plugin-react/node_modules/resolve
+155 silly CHANGE node_modules/eslint-plugin-react/node_modules/semver
+156 silly CHANGE node_modules/eslint-plugin-import/node_modules/semver
+157 silly CHANGE node_modules/eslint
+158 silly CHANGE node_modules/acorn
+159 verbose cwd C:\Users\loq\OneDrive\Documents\Desktop\Archive\Nextjs-Course-2026-master\Fullstack-Projects\leetcode
+160 verbose os Windows_NT 10.0.26200
+161 verbose node v25.2.1
+162 verbose npm  v11.6.2
+163 verbose exit 0
+164 info ok

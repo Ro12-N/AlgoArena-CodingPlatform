@@ -1,0 +1,277 @@
+
+> leetcode@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+   ▲ Next.js 15.5.2
+   - Local:        http://127.0.0.1:3000
+   - Network:      http://127.0.0.1:3000
+   - Environments: .env
+
+ ✓ Starting...
+   next-swc build: wasm build @next/swc-wasm-nodejs
+ ✓ Ready in 8.7s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1178ms (221 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 18.6s (1158 modules)
+ GET / 200 in 21595ms
+ ✓ Compiled in 2.1s (381 modules)
+ ✓ Compiled in 1153ms (381 modules)
+ GET / 200 in 172ms
+ ✓ Compiled in 1309ms (381 modules)
+ ✓ Compiled in 1205ms (381 modules)
+ ○ Compiling /profile ...
+ ✓ Compiled /profile in 4.4s (1661 modules)
+ GET /about 200 in 5993ms
+ GET /profile 200 in 5849ms
+ GET /problems 200 in 6174ms
+ ✓ Compiled in 1588ms (563 modules)
+ ✓ Compiled in 1223ms (563 modules)
+ ○ Compiling /problem/[id] ...
+ ✓ Compiled /problem/[id] in 17.6s (2198 modules)
+ GET /problem/c0c81056-984a-41d6-853c-453dce04a5d0 200 in 21639ms
+ ○ Compiling / ...
+ ✓ Compiled / in 607ms (759 modules)
+ ✓ Compiled in 5s (653 modules)
+ GET / 200 in 8176ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1042ms (764 modules)
+ GET /favicon.ico 200 in 2819ms
+ ○ Compiling /create-problem ...
+ ✓ Compiled /create-problem in 7.4s (1604 modules)
+ GET /create-problem 200 in 8715ms
+ GET /create-problem 200 in 3853ms
+ ✓ Compiled in 4.4s (663 modules)
+ ✓ Compiled in 3.5s (663 modules)
+ GET /create-problem 200 in 346ms
+ ✓ Compiled in 3.8s (663 modules)
+ GET /create-problem 200 in 447ms
+ ○ Compiling /_error ...
+ GET / 200 in 5213ms
+ ✓ Compiled /problems in 22.3s (1944 modules)
+ ✓ Compiled (2112 modules)
+ GET /favicon.ico 200 in 13858ms
+ ○ Compiling /about ...
+ GET /create-problem 500 in 25241ms
+ GET /problems 200 in 6989ms
+ GET / 200 in 12470ms
+ ✓ Compiled /profile in 7.3s (2151 modules)
+ GET /about 200 in 12251ms
+ GET /problems 200 in 8410ms
+ GET /profile 200 in 8477ms
+ GET /create-problem 200 in 3793ms
+ GET /create-problem 200 in 11391ms
+ ✓ Compiled in 5.2s (815 modules)
+ GET / 200 in 11491ms
+ GET /create-problem 200 in 1072ms
+ GET /create-problem 200 in 4157ms
+ ✓ Compiled in 3.4s (815 modules)
+ GET /favicon.ico 200 in 44ms
+ ✓ Compiled in 4s (815 modules)
+ GET / 200 in 4220ms
+ ✓ Compiled in 3.7s (815 modules)
+ ✓ Compiled in 3.5s (815 modules)
+ GET / 200 in 10109ms
+ ✓ Compiled in 3.6s (815 modules)
+ GET / 200 in 10185ms
+ ✓ Compiled in 3.6s (815 modules)
+ GET / 200 in 10238ms
+ ✓ Compiled in 3.2s (815 modules)
+ GET / 200 in 3769ms
+ GET / 200 in 6727ms
+ ✓ Compiled in 3.3s (815 modules)
+ GET / 200 in 6947ms
+ ✓ Compiled in 3.9s (815 modules)
+ ✓ Compiled in 3.8s (815 modules)
+ GET / 200 in 11193ms
+ ✓ Compiled in 6.5s (815 modules)
+ GET / 200 in 13464ms
+ GET / 200 in 3526ms
+ GET / 200 in 10084ms
+ ✓ Compiled in 4.2s (815 modules)
+ ✓ Compiled in 3.3s (815 modules)
+ GET / 200 in 7971ms
+ ✓ Compiled in 3.8s (815 modules)
+ GET /profile 200 in 4565ms
+ GET / 200 in 5416ms
+ GET /problems 200 in 452ms
+ ✓ Compiled in 5.9s (815 modules)
+ ✓ Compiled in 3.4s (815 modules)
+ GET /problems 200 in 3425ms
+ ✓ Compiled in 2.8s (815 modules)
+ GET /problems 200 in 1337ms
+ ✓ Compiled in 1197ms (815 modules)
+ GET /problems 200 in 1255ms
+ ✓ Compiled in 1221ms (815 modules)
+ GET /problems 200 in 1080ms
+ ✓ Compiled in 1057ms (815 modules)
+ GET /problems 200 in 1025ms
+ ✓ Compiled in 1038ms (815 modules)
+ GET /problems 200 in 1107ms
+ ✓ Compiled in 1118ms (815 modules)
+ ✓ Compiled in 1047ms (815 modules)
+ GET /problems 200 in 1036ms
+ ✓ Compiled in 978ms (815 modules)
+ GET /problems 200 in 977ms
+ GET /problems 200 in 1138ms
+ ✓ Compiled in 1158ms (815 modules)
+ ✓ Compiled in 1177ms (815 modules)
+ GET /problems 200 in 1180ms
+ ✓ Compiled in 1311ms (815 modules)
+ GET /problems 200 in 1261ms
+ ✓ Compiled in 1211ms (815 modules)
+ GET /problems 200 in 1333ms
+ ✓ Compiled in 1294ms (815 modules)
+ GET /problems 200 in 1229ms
+ ✓ Compiled in 1219ms (815 modules)
+ GET /problems 200 in 1172ms
+ ✓ Compiled in 1171ms (815 modules)
+ GET /problems 200 in 1048ms
+ ✓ Compiled in 1061ms (815 modules)
+ GET /problems 200 in 1052ms
+ ✓ Compiled in 1050ms (815 modules)
+ GET /problems 200 in 928ms
+ ✓ Compiled in 973ms (814 modules)
+ GET /problems 200 in 1027ms
+ ✓ Compiled in 1082ms (814 modules)
+ GET /problems 200 in 1101ms
+ ✓ Compiled in 1119ms (814 modules)
+ GET /problems 200 in 982ms
+ ✓ Compiled in 1024ms (814 modules)
+ GET /problems 200 in 1022ms
+ ✓ Compiled in 1052ms (814 modules)
+ GET /problems 200 in 1386ms
+ ✓ Compiled in 1394ms (814 modules)
+ ✓ Compiled in 1126ms (814 modules)
+ GET /problems 200 in 1132ms
+ ✓ Compiled in 1028ms (814 modules)
+ GET /problems 200 in 1025ms
+ ✓ Compiled in 1001ms (814 modules)
+ GET /problems 200 in 1008ms
+ GET /problems 200 in 1171ms
+ ✓ Compiled in 1185ms (814 modules)
+ ✓ Compiled in 1083ms (814 modules)
+ GET /problems 200 in 1142ms
+ ✓ Compiled in 1081ms (814 modules)
+ ✓ Compiled in 1151ms (814 modules)
+ GET /problems 200 in 1158ms
+ ✓ Compiled in 1056ms (814 modules)
+ GET /problems 200 in 1061ms
+ ✓ Compiled in 1190ms (814 modules)
+ GET /problems 200 in 1189ms
+ ✓ Compiled in 1163ms (814 modules)
+ GET /problems 200 in 1165ms
+ GET /problems 200 in 1157ms
+ ✓ Compiled in 1174ms (814 modules)
+ GET /problems 200 in 1208ms
+ ✓ Compiled in 1264ms (814 modules)
+ ✓ Compiled in 1180ms (814 modules)
+ GET /problems 200 in 321ms
+ ✓ Compiled in 1238ms (814 modules)
+ GET /problems 200 in 170ms
+ ✓ Compiled in 1186ms (814 modules)
+ GET /problems 200 in 1359ms
+ ✓ Compiled in 1366ms (814 modules)
+ ✓ Compiled in 1365ms (814 modules)
+ GET /problems 200 in 92ms
+ ✓ Compiled in 1366ms (814 modules)
+ GET /problems 200 in 1268ms
+ ✓ Compiled in 1279ms (814 modules)
+ GET /problems 200 in 1318ms
+ ✓ Compiled in 1339ms (814 modules)
+ ✓ Compiled in 1258ms (814 modules)
+ GET /problems 200 in 1274ms
+ GET /problems 200 in 1329ms
+ ✓ Compiled in 1316ms (814 modules)
+ ✓ Compiled in 1168ms (814 modules)
+ GET /problems 200 in 1175ms
+ GET /problems 200 in 1272ms
+ ✓ Compiled in 1312ms (814 modules)
+ ✓ Compiled in 1166ms (814 modules)
+ GET /problems 200 in 1234ms
+ ✓ Compiled in 1295ms (814 modules)
+ GET /problems 200 in 1194ms
+ ✓ Compiled in 1165ms (814 modules)
+ GET /problems 200 in 1221ms
+ ✓ Compiled in 1240ms (814 modules)
+ GET /problems 200 in 1377ms
+ ✓ Compiled in 1368ms (814 modules)
+ ✓ Compiled in 1288ms (814 modules)
+ GET /problems 200 in 1132ms
+ ✓ Compiled in 1169ms (814 modules)
+ GET /problems 200 in 1162ms
+ ✓ Compiled in 1160ms (814 modules)
+ GET /problems 200 in 1246ms
+ ✓ Compiled in 1260ms (814 modules)
+ GET /problems 200 in 1187ms
+ ✓ Compiled in 1236ms (814 modules)
+ GET /problems 200 in 1119ms
+ ✓ Compiled in 1129ms (814 modules)
+ GET /problems 200 in 997ms
+ ✓ Compiled in 1041ms (814 modules)
+ ✓ Compiled in 1042ms (814 modules)
+ GET /problems 200 in 1051ms
+ ✓ Compiled in 1189ms (814 modules)
+ GET /problems 200 in 1224ms
+ ✓ Compiled in 1372ms (814 modules)
+ GET /problems 200 in 1367ms
+ ✓ Compiled in 1196ms (814 modules)
+ GET /problems 200 in 1230ms
+ ✓ Compiled in 1234ms (814 modules)
+ GET /problems 200 in 1237ms
+ ✓ Compiled in 1119ms (814 modules)
+ GET /problems 200 in 1139ms
+ ✓ Compiled in 1158ms (814 modules)
+ GET /problems 200 in 1168ms
+ ✓ Compiled in 1154ms (814 modules)
+ GET /problems 200 in 1153ms
+ ✓ Compiled in 1017ms (814 modules)
+ GET /problems 200 in 1012ms
+ ✓ Compiled in 1018ms (814 modules)
+ GET /problems 200 in 1013ms
+ GET /problems 200 in 991ms
+ ✓ Compiled in 999ms (814 modules)
+ GET /problems 200 in 966ms
+ ✓ Compiled in 974ms (814 modules)
+ ✓ Compiled in 1024ms (814 modules)
+ GET /problems 200 in 961ms
+ ✓ Compiled in 911ms (814 modules)
+ GET /problems 200 in 1211ms
+ ✓ Compiled in 1193ms (814 modules)
+ ✓ Compiled in 952ms (814 modules)
+ GET /problems 200 in 946ms
+ ✓ Compiled in 976ms (814 modules)
+ GET /problems 200 in 156ms
+ ✓ Compiled in 973ms (814 modules)
+ GET /problems 200 in 167ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1925ms (2093 modules)
+ GET /problems 500 in 3176ms
+ GET /problems 200 in 257ms
+ ✓ Compiled in 1020ms (815 modules)
+ GET /problems 200 in 139ms
+ ✓ Compiled in 988ms (815 modules)
+ ✓ Compiled in 26.3s (2237 modules)
+ ✓ Compiled in 1041ms (815 modules)
+ ✓ Compiled in 1176ms (2015 modules)
+ ✓ Compiled in 1035ms (815 modules)
+ ✓ Compiled in 1074ms (815 modules)
+ ✓ Compiled in 899ms (815 modules)
+ ✓ Compiled in 1199ms (815 modules)
+ ✓ Compiled in 1016ms (815 modules)
+ GET / 200 in 1864ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 3.5s (1205 modules)
+ GET /favicon.ico 200 in 5196ms
+ ○ Compiling /sign-in/[[...sign-in]] ...
+ ✓ Compiled /sign-in/[[...sign-in]] in 5.4s (2015 modules)
+ OPTIONS /sign-in 400 in 7083ms
+ GET /sign-in 200 in 1751ms
+ GET /favicon.ico 200 in 57ms
+ GET / 200 in 289ms
+ GET /favicon.ico 200 in 36ms
+ GET /sign-in 200 in 513ms
+ GET /sign-in 200 in 541ms
+ GET / 200 in 359ms
+ ✓ Compiled in 8.4s (816 modules)
+ ✓ Compiled in 4s (816 modules)
