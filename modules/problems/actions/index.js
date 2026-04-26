@@ -3,7 +3,7 @@
 import { db } from "@/lib/db";
 import { getLanguageName, pollBatchResults, submitBatch } from "@/lib/judge0";
 import { getCurrentUser } from "@/modules/auth/actions";
-import { UserRole } from "@prisma/client";
+
 import { revalidatePath } from "next/cache";
 
 export const getAllProblems = async () => {
@@ -82,8 +82,8 @@ export const deleteProblem = async (problemId) => {
       throw new Error("Unauthorized");
     }
 
-    if (user.role !== UserRole.ADMIN) {
-      throw new Error("Only admins can delete problems");
+    if (user.role !== "ADMIN") {
+      throw new Error("Unauthorized: Only admins can delete problems.");
     }
 
     await db.problem.delete({

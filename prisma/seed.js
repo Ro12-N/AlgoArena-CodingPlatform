@@ -1,4 +1,4 @@
-const { PrismaClient, UserRole } = require("@prisma/client");
+const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
@@ -144,14 +144,14 @@ async function main() {
       email,
       firstName: "Local",
       lastName: "Developer",
-      role: UserRole.ADMIN,
+      role: "ADMIN",
     },
     create: {
       clerkId,
       email,
       firstName: "Local",
       lastName: "Developer",
-      role: UserRole.ADMIN,
+      role: "ADMIN",
     },
   });
 

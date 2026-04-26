@@ -10,20 +10,11 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
-enum UserRole {
-  ADMIN
-  USER
-}
 
-enum Difficulty {
-  EASY
-  MEDIUM
-  HARD
-}
 
 
 model User {
@@ -31,7 +22,7 @@ model User {
     clerkId  String  @unique
   username      String?      @unique
   email     String       @unique
-  role      UserRole     @default(USER)
+  role      String       @default("USER")
 
   firstName String?
   lastName  String?
@@ -53,8 +44,8 @@ model Problem {
   id          String       @id @default(uuid())
   title       String
   description String
-  difficulty  Difficulty   // EASY, MEDIUM, HARD
-  tags        String[]
+  difficulty  String       // EASY, MEDIUM, HARD
+  tags        Json
   userId      String       // Creator of the problem
   examples    Json         // Language-specific examples
   constraints String

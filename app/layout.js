@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Leetcode Clone",
-  description: "Clone of Leetcode",
+  title: "AlgoArena",
+  description: "AlgoArena Coding Platform",
 };
 
 export default function RootLayout({ children }) {

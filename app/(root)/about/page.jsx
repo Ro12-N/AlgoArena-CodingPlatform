@@ -13,7 +13,7 @@ export default function AboutPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">About This Project</h1>
         <p className="text-lg text-muted-foreground max-w-3xl">
-          This LeetCode-style app is built with Next.js, Prisma, PostgreSQL,
+          This AlgoArena app is built with Next.js, Prisma, PostgreSQL,
           Clerk, and a local development fallback so it can run even before
           external auth is configured.
         </p>
