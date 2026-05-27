@@ -32,7 +32,7 @@ const CreateProblemPage = async() => {
              <h1 className='text-3xl font-bold text-amber-400'>Welcome {user?.firstName || "Developer"}! Create a Problem</h1>
         <ModeToggle/>
         </div>
-       <CreateProblemForm/>
+       <CreateProblemForm mode="create" />
     </section>
   )
 }

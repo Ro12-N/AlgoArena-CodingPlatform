@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   Bookmark,
@@ -37,6 +37,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 
 const ProblemsTable = ({ problems, user, authConfigured }) => {
+  const [problemItems, setProblemItems] = useState(problems || []);
   const [search, setSearch] = useState("");
   const [difficulty, setDifficulty] = useState("ALL");
   const [selectedTag, setSelectedTag] = useState("ALL");
@@ -46,20 +47,24 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
     useState(false);
   const [selectedProblemId, setSelectedProblemId] = useState(null);
 
+  useEffect(() => {
+    setProblemItems(problems || []);
+  }, [problems]);
+
   // Extract all unique tags from problems
   const allTags = useMemo(() => {
-    if (!Array.isArray(problems)) return [];
+    if (!Array.isArray(problemItems)) return [];
     const tagsSet = new Set();
-    problems.forEach((p) => p.tags?.forEach((t) => tagsSet.add(t)));
+    problemItems.forEach((p) => p.tags?.forEach((t) => tagsSet.add(t)));
     return Array.from(tagsSet);
-  }, [problems]);
+  }, [problemItems]);
 
   // Define allowed difficulties
   const difficulties = ["EASY", "MEDIUM", "HARD"];
 
   // Filter problems based on search, difficulty, and tags
   const filteredProblems = useMemo(() => {
-    return (problems || [])
+    return (problemItems || [])
       .filter((problem) =>
         problem.title.toLowerCase().includes(search.toLowerCase())
       )
@@ -69,7 +74,7 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
       .filter((problem) =>
         selectedTag === "ALL" ? true : problem.tags?.includes(selectedTag)
       );
-  }, [problems, search, difficulty, selectedTag]);
+  }, [problemItems, search, difficulty, selectedTag]);
 
   // Pagination logic
   const itemsPerPage = 5;
@@ -84,6 +89,7 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
   const handleDelete = async (id) => {
     const result = await deleteProblem(id);
     if (result.success) {
+      setProblemItems((current) => current.filter((problem) => problem.id !== id));
       toast.success(result.message);
     } else {
       toast.error(result.error);
@@ -298,8 +304,10 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
                               >
                                 <TrashIcon className="h-4 w-4" />
                               </Button>
-                              <Button variant="outline" size="sm" disabled>
-                                <PencilIcon className="h-4 w-4" />
+                              <Button asChild variant="outline" size="sm">
+                                <Link href={`/edit-problem/${problem.id}`}>
+                                  <PencilIcon className="h-4 w-4" />
+                                </Link>
                               </Button>
                             </>
                           )}
@@ -393,6 +401,7 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
         onClose={() => setIsAddToPlaylistModalOpen(false)}
         onSubmit={handleAddToPlaylist}
         problemId={selectedProblemId}
+        onCreatePlaylistRequested={() => setIsCreateModalOpen(true)}
       />
     </div>
   );

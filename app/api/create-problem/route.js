@@ -58,7 +58,7 @@ export async function POST(request) {
       );
     }
 
-    const shouldValidateSolutions = Boolean(process.env.JUDGE0_API_URL);
+    const shouldValidateSolutions = true;
 
     if (shouldValidateSolutions) {
       for (const [language, solutionCode] of Object.entries(referenceSolutions)) {
@@ -124,9 +124,7 @@ export async function POST(request) {
     return NextResponse.json(
       {
         success: true,
-        message: shouldValidateSolutions
-          ? "Problem created successfully"
-          : "Problem created successfully without Judge0 validation",
+        message: "Problem created successfully",
         data: newProblem,
       },
       { status: 201 }

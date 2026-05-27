@@ -71,7 +71,7 @@ export const SubmissionHistory = ({ submissions = [] }) => {
                       ) : (
                         <Badge className="bg-red-500/10 text-red-500 hover:bg-red-500/20">
                           <XCircle className="mr-1 h-3 w-3" />
-                          Failed
+                          {submission.status}
                         </Badge>
                       )}
                     </div>

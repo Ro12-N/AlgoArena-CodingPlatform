@@ -78,6 +78,14 @@ export async function POST(request) {
     });
   } catch (error) {
     console.error("Error creating playlist:", error);
+
+    if (error.code === "P2002") {
+      return NextResponse.json(
+        { success: false, error: "You already have a playlist with this name" },
+        { status: 409 }
+      );
+    }
+
     return NextResponse.json(
       { success: false, error: "Failed to create playlist" },
       { status: 500 }

@@ -19,7 +19,7 @@ export const TestCaseTable = ({ testCases }) => {
         </TableHeader>
         <TableBody>
           {testCases.map((testCase, index) => (
-            <TableRow key={testCase.id}>
+            <TableRow key={testCase.id || `case-${index + 1}`}>
               <TableCell className="font-medium">Test {index + 1}</TableCell>
               <TableCell>
                 <div className="flex items-center gap-2">

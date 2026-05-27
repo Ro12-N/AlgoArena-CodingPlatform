@@ -54,6 +54,12 @@ const PlaylistsSection = ({ playlists }) => {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {playlist.description}
                   </p>
+                  <div className="mt-3">
+                    <Badge variant="outline">
+                      {playlist.problems?.length || 0} saved problem
+                      {(playlist.problems?.length || 0) === 1 ? "" : "s"}
+                    </Badge>
+                  </div>
                 </div>
               </div>
               

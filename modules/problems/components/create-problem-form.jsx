@@ -14,7 +14,7 @@ import {
   CheckCircle2,
   Download,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -29,7 +29,6 @@ import {
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
@@ -37,7 +36,9 @@ const problemSchema = z.object({
   title: z.string().min(3, "Title must be at least 3 characters"),
   description: z.string().min(10, "Description must be at least 10 characters"),
   difficulty: z.enum(["EASY", "MEDIUM", "HARD"]),
-  tags: z.array(z.string()).min(1, "At least one tag is required"),
+  tags: z
+    .array(z.string().min(1, "Tag is required"))
+    .min(1, "At least one tag is required"),
   constraints: z.string().min(1, "Constraints are required"),
   hints: z.string().optional(),
   editorial: z.string().optional(),
@@ -485,32 +486,76 @@ const CodeEditor = ({ value, onChange, language = "javascript" }) => {
   );
 };
 
-const CreateProblemForm = () => {
+const defaultProblemValues = {
+  title: "",
+  description: "",
+  difficulty: "EASY",
+  testCases: [{ input: "", output: "" }],
+  tags: [""],
+  constraints: "",
+  hints: "",
+  editorial: "",
+  examples: {
+    JAVASCRIPT: { input: "", output: "", explanation: "" },
+    PYTHON: { input: "", output: "", explanation: "" },
+    JAVA: { input: "", output: "", explanation: "" },
+  },
+  codeSnippets: {
+    JAVASCRIPT: "function solution() {\n  // Write your code here\n}",
+    PYTHON: "def solution():\n    # Write your code here\n    pass",
+    JAVA:
+      "public class Solution {\n    public static void main(String[] args) {\n        // Write your code here\n    }\n}",
+  },
+  referenceSolutions: {
+    JAVASCRIPT: "// Add your reference solution here",
+    PYTHON: "# Add your reference solution here",
+    JAVA: "// Add your reference solution here",
+  },
+};
+
+const normalizeProblemValues = (problem) => ({
+  ...defaultProblemValues,
+  ...problem,
+  title: problem?.title || "",
+  description: problem?.description || "",
+  difficulty: problem?.difficulty || "EASY",
+  tags:
+    Array.isArray(problem?.tags) && problem.tags.length
+      ? problem.tags
+      : defaultProblemValues.tags,
+  constraints: problem?.constraints || "",
+  hints: problem?.hints || "",
+  editorial: problem?.editorial || "",
+  testCases:
+    Array.isArray(problem?.testCases) && problem.testCases.length
+      ? problem.testCases
+      : defaultProblemValues.testCases,
+  examples: {
+    ...defaultProblemValues.examples,
+    ...(problem?.examples || {}),
+  },
+  codeSnippets: {
+    ...defaultProblemValues.codeSnippets,
+    ...(problem?.codeSnippets || {}),
+  },
+  referenceSolutions: {
+    ...defaultProblemValues.referenceSolutions,
+    ...(problem?.referenceSolutions || {}),
+  },
+});
+
+const CreateProblemForm = ({
+  mode = "create",
+  problemId = null,
+  initialValues = null,
+}) => {
   const router = useRouter();
   const [sampleType, setSampleType] = useState("DP");
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm({
     resolver: zodResolver(problemSchema),
-    defaultValues: {
-      testCases: [{ input: "", output: "" }],
-      tags: [""],
-      examples: {
-        JAVASCRIPT: { input: "", output: "", explanation: "" },
-        PYTHON: { input: "", output: "", explanation: "" },
-        JAVA: { input: "", output: "", explanation: "" },
-      },
-      codeSnippets: {
-        JAVASCRIPT: "function solution() {\n  // Write your code here\n}",
-        PYTHON: "def solution():\n    # Write your code here\n    pass",
-        JAVA: "public class Solution {\n    public static void main(String[] args) {\n        // Write your code here\n    }\n}",
-      },
-      referenceSolutions: {
-        JAVASCRIPT: "// Add your reference solution here",
-        PYTHON: "# Add your reference solution here",
-        JAVA: "// Add your reference solution here",
-      },
-    },
+    defaultValues: normalizeProblemValues(initialValues),
   });
 
   const {
@@ -518,7 +563,6 @@ const CreateProblemForm = () => {
     control,
     handleSubmit,
     reset,
-    setValue,
     formState: { errors },
   } = form;
 
@@ -542,25 +586,49 @@ const CreateProblemForm = () => {
     name: "tags",
   });
 
+  useEffect(() => {
+    if (!initialValues) {
+      return;
+    }
+
+    const normalizedValues = normalizeProblemValues(initialValues);
+    reset(normalizedValues);
+    replaceTags(normalizedValues.tags);
+    replaceTestCases(normalizedValues.testCases);
+  }, [initialValues, replaceTags, replaceTestCases, reset]);
+
   const onSubmit = async (values) => {
     try {
       setIsLoading(true);
-      const response = await fetch("/api/create-problem", {
-        method: "POST",
+      const endpoint =
+        mode === "edit" && problemId
+          ? `/api/problem/${problemId}`
+          : "/api/create-problem";
+      const response = await fetch(endpoint, {
+        method: mode === "edit" ? "PATCH" : "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
       });
       const result = await response.json();
 
       if (!response.ok || !result.success) {
-        throw new Error(result.error || "Failed to create problem");
+        throw new Error(
+          result.error
+            || `Failed to ${mode === "edit" ? "update" : "create"} problem`
+        );
       }
 
-      toast.success(result.message || "Problem created successfully");
-      router.push("/problems");
+      toast.success(
+        result.message
+          || `Problem ${mode === "edit" ? "updated" : "created"} successfully`
+      );
+      router.push(mode === "edit" && problemId ? `/problem/${problemId}` : "/problems");
     } catch (error) {
       console.error("Error creating problem:", error);
-      toast.error(error.message || "Failed to create problem");
+      toast.error(
+        error.message
+          || `Failed to ${mode === "edit" ? "update" : "create"} problem`
+      );
     } finally {
       setIsLoading(false);
     }
@@ -580,7 +648,7 @@ const CreateProblemForm = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <CardTitle className="text-3xl flex items-center gap-3">
               <FileText className="w-8 h-8 text-amber-600" />
-              Create Problem
+              {mode === "edit" ? "Edit Problem" : "Create Problem"}
             </CardTitle>
 
             <div className="flex flex-col md:flex-row gap-3">
@@ -1000,12 +1068,12 @@ const CreateProblemForm = () => {
                 {isLoading ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                    Creating...
+                    {mode === "edit" ? "Updating..." : "Creating..."}
                   </>
                 ) : (
                   <>
                     <Plus className="w-5 h-5" />
-                    Create Problem
+                    {mode === "edit" ? "Update Problem" : "Create Problem"}
                   </>
                 )}
               </Button>

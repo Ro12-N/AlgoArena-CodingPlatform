@@ -2,7 +2,12 @@
 
 import { useTheme } from 'next-themes';
 import Editor from '@monaco-editor/react';
-import { executeCode, getAllSubmissionByCurrentUserForProblem, getProblemById } from '@/modules/problems/actions';
+import {
+  executeCode,
+  getAllSubmissionByCurrentUserForProblem,
+  getProblemById,
+  submitCode,
+} from '@/modules/problems/actions';
 import React, { useState, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -40,12 +45,22 @@ const ProblemIdPage = ({ params }) => {
   const [problem, setProblem] = useState(null);
   const [selectedLanguage, setSelectedLanguage] = useState('JAVASCRIPT');
   const [code, setCode] = useState('');
-  const [output, setOutput] = useState('');
   const [isRunning, setIsRunning] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionHistory , setSubmissionHistory] = useState([]);
   const [executionResponse, setExecutionResponse] = useState(null);
   const { theme } = useTheme();
+
+  const loadSubmissionHistory = async (problemId) => {
+    try {
+      const historyResponse = await getAllSubmissionByCurrentUserForProblem(problemId);
+      if (historyResponse.success) {
+        setSubmissionHistory(historyResponse.data);
+      }
+    } catch (error) {
+      console.error('Error fetching submissions:', error);
+    }
+  };
 
   useEffect(() => {
     const fetchProblem = async () => {
@@ -68,12 +83,9 @@ const ProblemIdPage = ({ params }) => {
     const fetchSubmissionHistory = async()=>{
       try {
         const resolvedParams = await params;
-        const submissionHistory = await getAllSubmissionByCurrentUserForProblem(resolvedParams.id);
-        if (submissionHistory.success) {
-          setSubmissionHistory(submissionHistory.data);
-        }
+        await loadSubmissionHistory(resolvedParams.id);
       } catch (error) {
-        console.error('Error fetching problem:', error);
+        console.error('Error fetching submissions:', error);
       }
     }
 
@@ -92,7 +104,7 @@ const ProblemIdPage = ({ params }) => {
       const language_id = getJudge0LanguageId(selectedLanguage);
       const stdin = problem.testCases.map((tc) => tc.input);
       const expected_outputs = problem.testCases.map((tc) => tc.output);
-      const res = await executeCode(code, language_id, stdin, expected_outputs, problem.id);
+      const res = await executeCode(code, language_id, stdin, expected_outputs);
       setExecutionResponse(res);
       if (res.success) {
         toast.success("Code executed successfully");
@@ -108,8 +120,39 @@ const ProblemIdPage = ({ params }) => {
     }
   };
 
-  const handleSubmit =  () => {
-    toast.success("Submission flow is coming soon.");
+  const handleSubmit = async () => {
+    try {
+      setIsSubmitting(true);
+      const languageId = getJudge0LanguageId(selectedLanguage);
+      const stdin = problem.testCases.map((tc) => tc.input);
+      const expectedOutputs = problem.testCases.map((tc) => tc.output);
+      const res = await submitCode(
+        code,
+        languageId,
+        stdin,
+        expectedOutputs,
+        problem.id
+      );
+
+      setExecutionResponse(res);
+
+      if (!res.success) {
+        toast.error(res.error || "Submission failed");
+        return;
+      }
+
+      setSubmissionHistory((current) => [res.submission, ...current]);
+      toast.success(
+        res.submission.status === "Accepted"
+          ? "Solution submitted successfully"
+          : `Submission recorded: ${res.submission.status}`
+      );
+    } catch (error) {
+      console.error("Error submitting code", error);
+      toast.error("Error submitting code");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if(!problem){

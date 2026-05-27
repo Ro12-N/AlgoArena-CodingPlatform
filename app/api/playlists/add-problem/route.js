@@ -49,6 +49,14 @@ export async function POST(request) {
     });
   } catch (error) {
     console.error("Error adding problem to playlist:", error);
+
+    if (error.code === "P2002") {
+      return NextResponse.json(
+        { success: false, error: "This problem is already in that playlist" },
+        { status: 409 }
+      );
+    }
+
     return NextResponse.json(
       { success: false, error: "Failed to add problem to playlist" },
       { status: 500 }

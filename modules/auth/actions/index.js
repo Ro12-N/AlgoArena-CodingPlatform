@@ -110,8 +110,32 @@ export const getCurrentUserData = async () => {
       },
       include: {
         submissions: true,
-        solvedProblems: true,
-        playlists: true,
+        solvedProblems: {
+          include: {
+            problem: {
+              select: {
+                id: true,
+                title: true,
+                difficulty: true,
+              },
+            },
+          },
+        },
+        playlists: {
+          include: {
+            problems: {
+              include: {
+                problem: {
+                  select: {
+                    id: true,
+                    title: true,
+                    difficulty: true,
+                  },
+                },
+              },
+            },
+          },
+        },
       },
     });
   } catch (error) {

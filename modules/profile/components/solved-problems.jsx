@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Trophy, CheckCircle, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -21,7 +22,7 @@ const SolvedProblems = ({ solvedProblems }) => {
         <div className="flex items-center gap-3">
         <Trophy className="w-6 h-6 text-green-500" />
           <CardTitle className="text-2xl">Solved Problems</CardTitle>
-          <Badge variant="success">
+          <Badge className="bg-green-100 text-green-800 dark:bg-green-900/60 dark:text-green-200">
           {solvedProblems.length}
           </Badge>
         </div>
@@ -50,11 +51,16 @@ const SolvedProblems = ({ solvedProblems }) => {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold mb-2">
-                    Problem Solved
+                    <Link
+                      href={`/problem/${problem.problemId}`}
+                      className="hover:text-green-700 dark:hover:text-green-300"
+                    >
+                      {problem.problem?.title || "Problem Solved"}
+                    </Link>
                   </h3>
                   <div className="text-sm text-muted-foreground mb-3">
                     <Badge variant="outline" className="font-mono text-xs">
-                      {problem.problemId.slice(0, 8)}...
+                      {problem.problem?.difficulty || problem.problemId.slice(0, 8)}
                     </Badge>
                   </div>
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">

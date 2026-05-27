@@ -10,10 +10,16 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Plus, Check } from "lucide-react";
+import { Plus } from "lucide-react";
 import { toast } from "sonner";
 
-const AddToPlaylistModal = ({ isOpen, onClose, onSubmit, problemId }) => {
+const AddToPlaylistModal = ({
+  isOpen,
+  onClose,
+  onSubmit,
+  problemId,
+  onCreatePlaylistRequested,
+}) => {
   const [playlists, setPlaylists] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -95,7 +101,7 @@ const AddToPlaylistModal = ({ isOpen, onClose, onSubmit, problemId }) => {
                 variant="outline"
                 onClick={() => {
                   onClose();
-                  // You can emit an event or use a callback here to open create playlist modal
+                  onCreatePlaylistRequested?.();
                 }}
               >
                 Create Playlist

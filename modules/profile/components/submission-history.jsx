@@ -20,11 +20,11 @@ const SubmissionsHistory= ({ submissions }) => {
   const getStatusStyle = (status) => {
     switch (status) {
       case 'Accepted':
-        return 'success';
+        return 'bg-green-100 text-green-800 dark:bg-green-900/60 dark:text-green-200';
       case 'Wrong Answer':
-        return 'destructive';
+        return 'bg-red-100 text-red-800 dark:bg-red-900/60 dark:text-red-200';
       default:
-        return 'warning';
+        return 'bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200';
     }
   };
 
@@ -76,7 +76,7 @@ const SubmissionsHistory= ({ submissions }) => {
                         <span className="font-semibold">
                           Submission #{submissions.length - index}
                         </span>
-                        <Badge variant={getStatusStyle(submission.status)}>
+                        <Badge className={getStatusStyle(submission.status)}>
                           {submission.status}
                         </Badge>
                       </div>
