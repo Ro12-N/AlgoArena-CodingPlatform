@@ -1,6 +1,6 @@
 # AlgoArena Coding Platform - Project Architecture & Interview Guide
 
-This document serves as a comprehensive guide to understanding the AlgoArena Coding Platform. It explains the tech stack, file structure, component connections, and core workflows to help you confidently explain the project to an interviewer.
+This document serves as a comprehensive guide to understanding the AlgoArena Coding Platform. It explains the tech stack, file structure, component connections, and core workflows
 
 ## 1. Tech Stack Overview
 
@@ -66,7 +66,7 @@ The Prisma schema defines the following core models:
 6. `lib/judge0.js` polls the Judge0 API until execution completes, then returns the stdout/stderr, execution time, and memory usage.
 7. The backend compares the Judge0 output against the expected `testCases` and saves a `Submission` record to the database via Prisma.
 
-## 5. Potential Interview Questions & Answers
+## 5. Potential Questions & Answers
 
 **Q: Why use Next.js App Router instead of traditional React (Create React App)?**
 *A: App Router allows us to mix Server Components and Client Components. Server Components fetch data directly from the database (Prisma) without exposing an API endpoint, improving performance and security. It also handles SEO and layout persistence beautifully.*
