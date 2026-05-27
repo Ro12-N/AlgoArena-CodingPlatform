@@ -1,15 +1,14 @@
 import { getAllProblems } from '@/modules/problems/actions';
+import AuthStatusCard from "@/modules/auth/components/auth-status-card";
+import { currentUser, isClerkConfigured } from "@/lib/auth";
 import { getCurrentUser } from "@/modules/auth/actions";
 import ProblemsTable from '@/modules/problems/components/problem-table';
-import { redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
 const ProblemsPage = async () => {
-  const dbUser = await getCurrentUser();
-  if (!dbUser) {
-    redirect("/sign-in");
-  }
+  const authUser = await currentUser();
+  const dbUser = authUser ? await getCurrentUser() : null;
 
   const { data: problems, error } = await getAllProblems();
 
@@ -22,8 +21,27 @@ const ProblemsPage = async () => {
   }
 
   return (
-    <div className="container mx-auto py-32">
-      <ProblemsTable problems={problems} user={dbUser} />
+    <div className="container mx-auto py-32 space-y-6">
+      {!authUser && (
+        <div className="px-6">
+          <AuthStatusCard
+            title="Browse Problems in Guest Mode"
+            description={
+              isClerkConfigured()
+                ? "Sign in to track solved problems, create playlists, and save your progress."
+                : "This deployment can show the problem list, but account features need Clerk environment variables before sign-in can work."
+            }
+            authConfigured={isClerkConfigured()}
+            ctaLabel="Sign In to Save Progress"
+          />
+        </div>
+      )}
+
+      <ProblemsTable
+        problems={problems}
+        user={dbUser}
+        authConfigured={isClerkConfigured()}
+      />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 "use server";
 
 import { db } from "@/lib/db";
+import { currentUser } from "@/lib/auth";
 import { getLanguageName, pollBatchResults, submitBatch } from "@/lib/judge0";
 import { getCurrentUser } from "@/modules/auth/actions";
 
@@ -8,26 +9,35 @@ import { revalidatePath } from "next/cache";
 
 export const getAllProblems = async () => {
   try {
-    const user = await getCurrentUser();
+    const authUser = await currentUser();
+    const user = authUser ? await getCurrentUser() : null;
 
-    if (!user) {
-      throw new Error("User not found");
-    }
-
-    const problems = await db.problem.findMany({
-      include: {
-        solvedBy: {
-          where: {
-            userId: user.id,
+    const problems = user
+      ? await db.problem.findMany({
+          include: {
+            solvedBy: {
+              where: {
+                userId: user.id,
+              },
+            },
           },
-        },
-      },
-      orderBy: {
-        createdAt: "desc",
-      },
-    });
+          orderBy: {
+            createdAt: "desc",
+          },
+        })
+      : await db.problem.findMany({
+          orderBy: {
+            createdAt: "desc",
+          },
+        });
 
-    return { success: true, data: problems };
+    return {
+      success: true,
+      data: problems.map((problem) => ({
+        ...problem,
+        solvedBy: problem.solvedBy || [],
+      })),
+    };
   } catch (error) {
     console.error("Error fetching problems:", error);
     return { success: false, error: "Failed to fetch problems" };

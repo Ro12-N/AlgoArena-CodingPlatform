@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   Bookmark,
   PencilIcon,
-  Trash,
   TrashIcon,
   Plus,
   Search,
@@ -13,11 +12,7 @@ import {
 } from "lucide-react";
 import AddToPlaylistModal from "./add-to-playlist";
 import CreatePlaylistModal from "./create-playlist";
-import {
-  createPlaylist,
-  deleteProblem,
-  addProblemToPlaylist,
-} from "../actions";
+import { deleteProblem } from "../actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -40,7 +35,7 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 
-const ProblemsTable = ({ problems, user }) => {
+const ProblemsTable = ({ problems, user, authConfigured }) => {
   const [search, setSearch] = useState("");
   const [difficulty, setDifficulty] = useState("ALL");
   const [selectedTag, setSelectedTag] = useState("ALL");
@@ -141,19 +136,6 @@ const ProblemsTable = ({ problems, user }) => {
     }
   };
 
-  const getDifficultyVariant = (difficulty) => {
-    switch (difficulty) {
-      case "EASY":
-        return "default";
-      case "MEDIUM":
-        return "secondary";
-      case "HARD":
-        return "destructive";
-      default:
-        return "outline";
-    }
-  };
-
   const getDifficultyColor = (difficulty) => {
     switch (difficulty) {
       case "EASY":
@@ -167,6 +149,8 @@ const ProblemsTable = ({ problems, user }) => {
     }
   };
 
+  const guestActionLabel = authConfigured ? "Sign In" : "Open Setup Notice";
+
   return (
     <div className="w-full max-w-7xl mx-auto space-y-8 p-6">
       {/* Header */}
@@ -177,10 +161,16 @@ const ProblemsTable = ({ problems, user }) => {
             Manage and solve coding problems
           </p>
         </div>
-        <Button onClick={() => setIsCreateModalOpen(true)} className="gap-2">
-          <Plus className="h-4 w-4" />
-          Create Playlist
-        </Button>
+        {user ? (
+          <Button onClick={() => setIsCreateModalOpen(true)} className="gap-2">
+            <Plus className="h-4 w-4" />
+            Create Playlist
+          </Button>
+        ) : (
+          <Button asChild variant="outline">
+            <Link href="/sign-in">{guestActionLabel}</Link>
+          </Button>
+        )}
       </div>
 
       {/* Filters */}
@@ -254,7 +244,7 @@ const ProblemsTable = ({ problems, user }) => {
             <TableBody>
               {paginatedProblems.length > 0 ? (
                 paginatedProblems.map((problem) => {
-                  const isSolved = problem.solvedBy.length > 0;
+                  const isSolved = (problem.solvedBy || []).length > 0;
                   return (
                     <TableRow key={problem.id}>
                       <TableCell>
@@ -310,18 +300,24 @@ const ProblemsTable = ({ problems, user }) => {
                               </Button>
                             </>
                           )}
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => {
-                              setSelectedProblemId(problem.id);
-                              setIsAddToPlaylistModalOpen(true);
-                            }}
-                            className="gap-2"
-                          >
-                            <Bookmark className="h-4 w-4" />
-                            <span className="hidden sm:inline">Save</span>
-                          </Button>
+                          {user ? (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => {
+                                setSelectedProblemId(problem.id);
+                                setIsAddToPlaylistModalOpen(true);
+                              }}
+                              className="gap-2"
+                            >
+                              <Bookmark className="h-4 w-4" />
+                              <span className="hidden sm:inline">Save</span>
+                            </Button>
+                          ) : (
+                            <Button asChild variant="outline" size="sm">
+                              <Link href="/sign-in">{guestActionLabel}</Link>
+                            </Button>
+                          )}
                         </div>
                       </TableCell>
                     </TableRow>

@@ -1,4 +1,5 @@
 import {
+  currentUser,
   isClerkConfigured,
   isDevelopmentAuthFallbackEnabled,
 } from "@/lib/auth";
@@ -9,13 +10,15 @@ import React from "react";
 export const dynamic = "force-dynamic";
 
 const RootLayout = async ({ children }) => {
-  const onboardingResult = await onBoardUser();
+  const authUser = await currentUser();
+  const onboardingResult = authUser ? await onBoardUser() : null;
   const userRole = onboardingResult?.success ? onboardingResult.user.role : null;
 
   return (
     <main className="flex flex-col min-h-screen max-h-screen">
       <Navbar
         userRole={userRole}
+        isSignedIn={Boolean(authUser)}
         authConfigured={isClerkConfigured()}
         devAuthEnabled={isDevelopmentAuthFallbackEnabled()}
       />

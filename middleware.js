@@ -5,6 +5,9 @@ import { isDevelopmentAuthFallbackEnabled } from "@/lib/auth";
 const isPublicRoute = createRouteMatcher([
   "/",
   "/about",
+  "/problems",
+  "/profile",
+  "/problem/(.*)",
   "/sign-in(.*)",
   "/sign-up(.*)",
 ]);
