@@ -44,5 +44,15 @@ export default function RootLayout({ children }) {
     return content;
   }
 
-  return <ClerkProvider>{content}</ClerkProvider>;
+  return (
+    <ClerkProvider
+      signInUrl="/sign-in"
+      signUpUrl="/sign-up"
+      signInFallbackRedirectUrl="/"
+      signUpFallbackRedirectUrl="/"
+      afterSignOutUrl="/sign-in"
+    >
+      {content}
+    </ClerkProvider>
+  );
 }

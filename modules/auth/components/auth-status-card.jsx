@@ -3,6 +3,7 @@ import { Lock, Settings2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import SignInCta from "@/modules/auth/components/sign-in-cta";
 
 const AuthStatusCard = ({
   title,
@@ -30,11 +31,13 @@ const AuthStatusCard = ({
           </div>
         )}
 
-        <Button asChild>
-          <Link href="/sign-in">
-            {authConfigured ? ctaLabel : "Open Setup Notice"}
-          </Link>
-        </Button>
+        {authConfigured ? (
+          <SignInCta authConfigured label={ctaLabel} variant="default" />
+        ) : (
+          <Button asChild>
+            <Link href="/sign-in">Open Setup Notice</Link>
+          </Button>
+        )}
       </CardContent>
     </Card>
   );

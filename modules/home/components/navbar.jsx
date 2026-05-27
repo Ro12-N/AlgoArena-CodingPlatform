@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import SignInCta from "@/modules/auth/components/sign-in-cta";
 
 
 const Navbar = ({ userRole, isSignedIn, authConfigured, devAuthEnabled }) => {
@@ -60,9 +61,7 @@ const Navbar = ({ userRole, isSignedIn, authConfigured, devAuthEnabled }) => {
                 Local Dev
               </Badge>
             ) : (
-              <Button asChild variant="outline" size="sm">
-                <Link href="/sign-in">Sign In</Link>
-              </Button>
+              <SignInCta authConfigured={authConfigured} size="sm" />
             )}
           </div>
         </div>

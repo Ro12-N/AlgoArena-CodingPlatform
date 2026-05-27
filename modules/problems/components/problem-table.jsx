@@ -16,6 +16,7 @@ import { deleteProblem } from "../actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import SignInCta from "@/modules/auth/components/sign-in-cta";
 import {
   Table,
   TableBody,
@@ -167,9 +168,11 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
             Create Playlist
           </Button>
         ) : (
-          <Button asChild variant="outline">
-            <Link href="/sign-in">{guestActionLabel}</Link>
-          </Button>
+          <SignInCta
+            authConfigured={authConfigured}
+            label={guestActionLabel}
+            variant="outline"
+          />
         )}
       </div>
 
@@ -314,9 +317,12 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
                               <span className="hidden sm:inline">Save</span>
                             </Button>
                           ) : (
-                            <Button asChild variant="outline" size="sm">
-                              <Link href="/sign-in">{guestActionLabel}</Link>
-                            </Button>
+                            <SignInCta
+                              authConfigured={authConfigured}
+                              label={guestActionLabel}
+                              variant="outline"
+                              size="sm"
+                            />
                           )}
                         </div>
                       </TableCell>
