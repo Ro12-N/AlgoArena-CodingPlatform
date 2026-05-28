@@ -1,5 +1,6 @@
 "use server";
 
+import { UserRole } from "@prisma/client";
 import { db } from "@/lib/db";
 import {
   currentUser,
@@ -84,9 +85,12 @@ export const onBoardUser = async () => {
 
     let roleUpdate = {};
     if (isDevelopmentAuthFallbackEnabled()) {
-      roleUpdate = { role: getDevelopmentRole() };
+      roleUpdate = {
+        role:
+          getDevelopmentRole() === "USER" ? UserRole.USER : UserRole.ADMIN,
+      };
     } else if (isAdminEmail(email)) {
-      roleUpdate = { role: "ADMIN" };
+      roleUpdate = { role: UserRole.ADMIN };
     }
 
     const newUser = await upsertAppUser(user, email, userData, roleUpdate);

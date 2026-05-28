@@ -14,15 +14,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum UserRole {
+  ADMIN
+  USER
+}
 
-
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
 
 model User {
   id        String       @id @default(uuid())
     clerkId  String  @unique
   username      String?      @unique
   email     String       @unique
-  role      String       @default("USER")
+  role      UserRole     @default(USER)
 
   firstName String?
   lastName  String?
@@ -44,8 +52,8 @@ model Problem {
   id          String       @id @default(uuid())
   title       String
   description String
-  difficulty  String       // EASY, MEDIUM, HARD
-  tags        Json
+  difficulty  Difficulty
+  tags        String[]
   userId      String       // Creator of the problem
   examples    Json         // Language-specific examples
   constraints String
