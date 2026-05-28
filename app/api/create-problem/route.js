@@ -1,4 +1,9 @@
-import { getJudge0LanguageId, pollBatchResults, submitBatch } from "@/lib/judge0";
+import {
+  formatJudge0Error,
+  getJudge0LanguageId,
+  runSubmissions,
+} from "@/lib/judge0";
+import { UserRole } from "@prisma/client";
 import { getCurrentUser } from "@/modules/auth/actions";
 
 import { NextResponse } from "next/server";
@@ -8,7 +13,7 @@ export async function POST(request) {
   try {
     const user = await getCurrentUser();
 
-    if (!user || user.role !== "ADMIN") {
+    if (!user || user.role !== UserRole.ADMIN) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -78,9 +83,7 @@ export async function POST(request) {
           expected_output: output,
         }));
 
-        const submissionResults = await submitBatch(submissions);
-        const tokens = submissionResults.map((result) => result.token);
-        const results = await pollBatchResults(tokens);
+        const results = await runSubmissions(submissions);
 
         for (let index = 0; index < results.length; index += 1) {
           const result = results[index];
@@ -131,9 +134,10 @@ export async function POST(request) {
     );
   } catch (error) {
     console.error("Error creating problem:", error);
-    return NextResponse.json(
-      { error: error.message || "Failed to save problem to database" },
-      { status: 500 }
-    );
+    const message =
+      error?.response?.status === 403
+        ? formatJudge0Error(error)
+        : error.message || "Failed to save problem to database";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

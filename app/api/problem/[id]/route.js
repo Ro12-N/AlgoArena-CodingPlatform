@@ -1,4 +1,5 @@
-import { getJudge0LanguageId, pollBatchResults, submitBatch } from "@/lib/judge0";
+import { getJudge0LanguageId, runSubmissions } from "@/lib/judge0";
+import { UserRole } from "@prisma/client";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/modules/auth/actions";
 import { NextResponse } from "next/server";
@@ -18,9 +19,7 @@ async function validateReferenceSolutions(referenceSolutions, testCases) {
       expected_output: output,
     }));
 
-    const submissionResults = await submitBatch(submissions);
-    const tokens = submissionResults.map((result) => result.token);
-    const results = await pollBatchResults(tokens);
+    const results = await runSubmissions(submissions);
 
     for (let index = 0; index < results.length; index += 1) {
       const result = results[index];
@@ -46,7 +45,7 @@ export async function PATCH(request, { params }) {
   try {
     const user = await getCurrentUser();
 
-    if (!user || user.role !== "ADMIN") {
+    if (!user || user.role !== UserRole.ADMIN) {
       return NextResponse.json(
         { success: false, error: "Unauthorized" },
         { status: 401 }

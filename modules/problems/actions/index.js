@@ -2,7 +2,7 @@
 
 import { db } from "@/lib/db";
 import { currentUser } from "@/lib/auth";
-import { getLanguageName, pollBatchResults, submitBatch } from "@/lib/judge0";
+import { formatJudge0Error, getLanguageName, runSubmissions } from "@/lib/judge0";
 import { getCurrentUser } from "@/modules/auth/actions";
 
 import { revalidatePath } from "next/cache";
@@ -91,9 +91,7 @@ const evaluateCodeAgainstTestCases = async ({
     wait: false,
   }));
 
-  const submitResponse = await submitBatch(submissions);
-  const tokens = submitResponse.map((result) => result.token);
-  const results = await pollBatchResults(tokens);
+  const results = await runSubmissions(submissions);
 
   const detailedResults = results.map((result, index) => {
     const stdout = result.stdout?.trim() || null;
@@ -332,7 +330,7 @@ export const executeCode = async (
     console.error("Error executing code:", error);
     return {
       success: false,
-      error: error.message || "Failed to execute code",
+      error: formatJudge0Error(error),
     };
   }
 };
@@ -417,7 +415,7 @@ export const submitCode = async (
     console.error("Error submitting code:", error);
     return {
       success: false,
-      error: error.message || "Failed to submit code",
+      error: formatJudge0Error(error),
     };
   }
 };

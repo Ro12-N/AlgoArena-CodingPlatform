@@ -612,6 +612,7 @@ const CreateProblemForm = ({
       const response = await fetch(endpoint, {
         method: mode === "edit" ? "PATCH" : "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify(values),
       });
       const result = await response.json();
