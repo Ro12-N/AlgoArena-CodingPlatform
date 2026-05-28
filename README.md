@@ -1,4 +1,4 @@
-# 🚀 CodeArena - LeetCode Style Coding Platform
+# 🚀 AlgoArena - LeetCode Style Coding Platform
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
