@@ -33,9 +33,12 @@ const ProfilePage = async () => {
     );
   }
 
-  const profileData = await getCurrentUserData();
+  const { data: profileData, error: profileError } = await getCurrentUserData();
 
   if (!profileData) {
+    const detail =
+      profileError || "Your profile could not be loaded after sign-in.";
+
     return (
       <div className="min-h-screen py-32">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -43,14 +46,29 @@ const ProfilePage = async () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <AlertTriangle className="h-5 w-5 text-amber-500" />
-                We couldn't load your profile
+                We couldn&apos;t load your profile
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                Your account was detected, but the profile data could not be
-                loaded from the database for this request.
-              </p>
+            <CardContent className="space-y-3 text-sm text-muted-foreground">
+              <p>{detail}</p>
+              <ul className="list-disc space-y-1 pl-5">
+                <li>
+                  In Vercel → Settings → Environment Variables, set{" "}
+                  <code className="text-foreground">DATABASE_URL</code> to your
+                  hosted Postgres URL (Neon/Supabase pooled URL).
+                </li>
+                <li>
+                  Redeploy so{" "}
+                  <code className="text-foreground">prisma migrate deploy</code>{" "}
+                  runs (build uses <code className="text-foreground">vercel-build</code>
+                  ).
+                </li>
+                <li>
+                  For admin / Create Problem, set{" "}
+                  <code className="text-foreground">ADMIN_EMAILS</code> to your
+                  Clerk email, redeploy, then sign out and sign in again.
+                </li>
+              </ul>
             </CardContent>
           </Card>
         </div>
