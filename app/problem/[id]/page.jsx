@@ -49,6 +49,7 @@ const ProblemIdPage = ({ params }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionHistory , setSubmissionHistory] = useState([]);
   const [executionResponse, setExecutionResponse] = useState(null);
+  const [loadError, setLoadError] = useState(null);
   const { theme } = useTheme();
 
   const loadSubmissionHistory = async (problemId) => {
@@ -67,12 +68,16 @@ const ProblemIdPage = ({ params }) => {
       try {
         const resolvedParams = await params;
         const problemData = await getProblemById(resolvedParams.id);
-        if (problemData.success) {
+        if (problemData.success && problemData.data) {
           setProblem(problemData.data);
           setCode(problemData.data.codeSnippets[selectedLanguage] || '');
+          setLoadError(null);
+        } else {
+          setLoadError(problemData.error || "Problem not found");
         }
       } catch (error) {
         console.error('Error fetching problem:', error);
+        setLoadError("Failed to load problem");
       }
     };
 
@@ -155,12 +160,23 @@ const ProblemIdPage = ({ params }) => {
     }
   };
 
-  if(!problem){
+  if (loadError) {
     return (
-      <div className='flex flex-col items-center justify-center h-screen'>
-        <Loader2 className='animate-spin size-5 text-amber-400' />
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6">
+        <p className="text-destructive">{loadError}</p>
+        <Link href="/problems">
+          <Button variant="outline">Back to Problems</Button>
+        </Link>
       </div>
-    )
+    );
+  }
+
+  if (!problem) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center">
+        <Loader2 className="size-8 animate-spin text-amber-400" />
+      </div>
+    );
   }
 
 

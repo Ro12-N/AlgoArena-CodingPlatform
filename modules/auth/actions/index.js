@@ -83,14 +83,12 @@ export const onBoardUser = async () => {
       email,
     };
 
-    let roleUpdate = {};
+    const roleUpdate = {};
     if (isDevelopmentAuthFallbackEnabled()) {
-      roleUpdate = {
-        role:
-          getDevelopmentRole() === "USER" ? UserRole.USER : UserRole.ADMIN,
-      };
+      roleUpdate.role =
+        getDevelopmentRole() === "USER" ? UserRole.USER : UserRole.ADMIN;
     } else if (isAdminEmail(email)) {
-      roleUpdate = { role: UserRole.ADMIN };
+      roleUpdate.role = UserRole.ADMIN;
     }
 
     const newUser = await upsertAppUser(user, email, userData, roleUpdate);

@@ -1,7 +1,8 @@
-import React from 'react';
-import { List, Calendar, FileText } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import React from "react";
+import Link from "next/link";
+import { List, Calendar, FileText } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 
 
@@ -54,11 +55,28 @@ const PlaylistsSection = ({ playlists }) => {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {playlist.description}
                   </p>
-                  <div className="mt-3">
+                  <div className="mt-3 space-y-2">
                     <Badge variant="outline">
                       {playlist.problems?.length || 0} saved problem
                       {(playlist.problems?.length || 0) === 1 ? "" : "s"}
                     </Badge>
+                    {playlist.problems?.length > 0 && (
+                      <ul className="space-y-1 text-sm">
+                        {playlist.problems.map((entry) => (
+                          <li key={entry.id}>
+                            <Link
+                              href={`/problem/${entry.problem.id}`}
+                              className="text-blue-600 hover:underline dark:text-blue-400"
+                            >
+                              {entry.problem.title}
+                            </Link>
+                            <span className="ml-2 text-muted-foreground">
+                              ({entry.problem.difficulty})
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               </div>

@@ -87,6 +87,10 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
   }, [filteredProblems, currentPage]);
 
   const handleDelete = async (id) => {
+    if (!window.confirm("Delete this problem permanently?")) {
+      return;
+    }
+
     const result = await deleteProblem(id);
     if (result.success) {
       setProblemItems((current) => current.filter((problem) => problem.id !== id));
@@ -101,6 +105,7 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
       const response = await fetch("/api/playlists", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify({
           name: data.name,
           description: data.description,
@@ -108,6 +113,10 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
       });
 
       const result = await response.json();
+
+      if (response.status === 401) {
+        throw new Error("Sign in to create playlists");
+      }
 
       if (result.success) {
         setIsCreateModalOpen(false);
@@ -126,10 +135,15 @@ const ProblemsTable = ({ problems, user, authConfigured }) => {
       const response = await fetch("/api/playlists/add-problem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify({ problemId, playlistId }),
       });
 
       const result = await response.json();
+
+      if (response.status === 401) {
+        throw new Error("Sign in to save problems to playlists");
+      }
 
       if (result.success) {
         setIsAddToPlaylistModalOpen(false);

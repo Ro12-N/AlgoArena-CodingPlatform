@@ -10,15 +10,19 @@ const ProblemsPage = async () => {
   const authUser = await currentUser();
   const dbUser = authUser ? await getCurrentUser() : null;
 
-  const { data: problems, error } = await getAllProblems();
+  const problemsResult = await getAllProblems();
 
-  if (error) {
+  if (!problemsResult.success) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p className="text-destructive">Error loading problems: {error}</p>
+        <p className="text-destructive">
+          Error loading problems: {problemsResult.error}
+        </p>
       </div>
     );
   }
+
+  const problems = problemsResult.data;
 
   return (
     <div className="container mx-auto py-32 space-y-6">

@@ -26,8 +26,11 @@ const AddToPlaylistModal = ({
   useEffect(() => {
     const loadPlaylists = async () => {
       try {
-        const response = await fetch('/api/playlists');
+        const response = await fetch("/api/playlists", { credentials: "same-origin" });
         const data = await response.json();
+        if (response.status === 401) {
+          throw new Error("Sign in to use playlists");
+        }
         if (data.success) {
           setPlaylists(data.playlists);
         } else {
@@ -58,7 +61,12 @@ const AddToPlaylistModal = ({
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose();
+      }}
+    >
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Add to Playlist</DialogTitle>

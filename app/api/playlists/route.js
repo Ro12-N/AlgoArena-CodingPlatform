@@ -1,5 +1,6 @@
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/modules/auth/actions";
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -71,6 +72,9 @@ export async function POST(request) {
         userId: user.id,
       },
     });
+
+    revalidatePath("/profile");
+    revalidatePath("/problems");
 
     return NextResponse.json({
       success: true,

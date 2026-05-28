@@ -189,61 +189,66 @@ class Main {
 }`,
   },
   referenceSolutions: {
-    JAVASCRIPT: `/**
-* @param {number} n
-* @return {number}
-*/
-function climbStairs(n) {
-// Base cases
-if (n <= 2) {
-  return n;
+    JAVASCRIPT: `function climbStairs(n) {
+  if (n <= 2) {
+    return n;
+  }
+
+  let prev = 1;
+  let curr = 2;
+
+  for (let step = 3; step <= n; step += 1) {
+    const next = prev + curr;
+    prev = curr;
+    curr = next;
+  }
+
+  return curr;
 }
 
-// Dynamic programming approach
-let dp = new Array(n + 1);
-dp[1] = 1;
-dp[2] = 2;
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").trim();
+const n = Number(input);
+console.log(climbStairs(n));`,
+    PYTHON: `def climb_stairs(n):
+    if n <= 2:
+        return n
 
-for (let i = 3; i <= n; i++) {
-  dp[i] = dp[i - 1] + dp[i - 2];
-}
+    prev, curr = 1, 2
+    for _ in range(3, n + 1):
+        prev, curr = curr, prev + curr
 
-return dp[n];
-}`,
-    PYTHON: `class Solution:
-  def climbStairs(self, n: int) -> int:
-      # Base cases
-      if n <= 2:
-          return n
-      
-      # Dynamic programming approach
-      dp = [0] * (n + 1)
-      dp[1] = 1
-      dp[2] = 2
-      
-      for i in range(3, n + 1):
-          dp[i] = dp[i - 1] + dp[i - 2]
-      
-      return dp[n]`,
+    return curr
+
+if __name__ == "__main__":
+    import sys
+    n = int(sys.stdin.readline().strip())
+    print(climb_stairs(n))`,
     JAVA: `import java.util.Scanner;
 
 class Main {
-  public int climbStairs(int n) {
-      // Base cases
-      if (n <= 2) {
-          return n;
-      }
-      
-      // Dynamic programming approach
-      int[] dp = new int[n + 1];
-      dp[1] = 1;
-      dp[2] = 2;
-      
-      for (int i = 3; i <= n; i++) {
-          dp[i] = dp[i - 1] + dp[i - 2];
-      }
-      
-      return dp[n];
+  static int climbStairs(int n) {
+    if (n <= 2) {
+      return n;
+    }
+
+    int prev = 1;
+    int curr = 2;
+
+    for (int step = 3; step <= n; step++) {
+      int next = prev + curr;
+      prev = curr;
+      curr = next;
+    }
+
+    return curr;
+  }
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = Integer.parseInt(scanner.nextLine().trim());
+    System.out.println(climbStairs(n));
+    scanner.close();
   }
 }`,
   },

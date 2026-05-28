@@ -1,5 +1,5 @@
 import AppChrome from "@/components/layout/app-chrome";
 
-export default function RootLayout({ children }) {
+export default function ProblemLayout({ children }) {
   return <AppChrome>{children}</AppChrome>;
 }

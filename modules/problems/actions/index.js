@@ -176,10 +176,14 @@ export const getProblemById = async (id) => {
       },
     });
 
+    if (!problem) {
+      return { success: false, error: "Problem not found", data: null };
+    }
+
     return { success: true, data: problem };
   } catch (error) {
     console.error("Error fetching problem:", error);
-    return { success: false, error: "Failed to fetch problem" };
+    return { success: false, error: "Failed to fetch problem", data: null };
   }
 };
 

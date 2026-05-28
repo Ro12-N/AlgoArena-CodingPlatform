@@ -12,6 +12,8 @@ const isPublicRoute = createRouteMatcher([
   "/sign-up(.*)",
 ]);
 
+const isApiRoute = createRouteMatcher(["/api/(.*)"]);
+
 const hasClerkCredentials = Boolean(
   process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY &&
     process.env.CLERK_SECRET_KEY
@@ -34,6 +36,13 @@ export default function middleware(req, event) {
 
   if (isPublicRoute(req)) {
     return NextResponse.next();
+  }
+
+  if (isApiRoute(req)) {
+    return NextResponse.json(
+      { success: false, error: "Unauthorized" },
+      { status: 401 }
+    );
   }
 
   const signInUrl = new URL("/sign-in", req.url);
