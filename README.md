@@ -41,7 +41,8 @@
 
 ## 📸 Screenshots
 ### Workflow
-![Architecture](./public/images/archi.png)
+![Architecture](./public/images/arc1.png)
+![](./public/images/arc2.png)
 
 
 ### 🏠 Home Page - Hero Section
