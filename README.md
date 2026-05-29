@@ -40,6 +40,9 @@
 | **Deployment** | Vercel | Hosting, CI/CD |
 
 ## 📸 Screenshots
+### Workflow
+![Architecture](./public/images/archi.png)
+
 
 ### 🏠 Home Page - Hero Section
 ![Hero Section](./public/images/home-hero.png)
