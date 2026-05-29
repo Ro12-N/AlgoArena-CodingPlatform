@@ -1,4 +1,4 @@
-# 🚀 CodeArena - LeetCode Style Coding Platform
+# 🚀 AlgoArena - LeetCode Style Coding Platform
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
@@ -38,6 +38,38 @@
 | **Code Execution** | Judge0 API | Secure code execution in sandbox |
 | **Editor** | Monaco Editor | VS Code-like coding experience |
 | **Deployment** | Vercel | Hosting, CI/CD |
+
+## 📸 Screenshots
+
+### 🏠 Home Page - Hero Section
+![Hero Section](./public/images/home-hero.png)
+
+### ⚡ Features Section
+![Features](./public/images/features.png)
+
+### 📋 Problems List
+![Problems List](./public/images/problems-list.png)
+
+### 💻 Problem Detail & Code Editor
+![Problem Detail](./public/images/problem-detail.png)
+
+### ✏️ Code Editor
+![Code Editor](./public/images/problem-editor.png)
+
+### 👤 User Profile
+![User Profile](./public/images/profile-page.png)
+
+### 👑 Admin - Create Problem
+![Create Problem](./public/images/create-problem.png)
+
+### 📝 Code Templates
+![Code Templates](./public/images/code-templates.png)
+
+### 💡 Examples & Hints
+![Examples and Hints](./public/images/examples-hints.png)
+
+### 📚 Create Playlist Modal
+![Playlist Modal](./public/images/playlist-modal.png)
 
 ## 📊 Database Schema
 
